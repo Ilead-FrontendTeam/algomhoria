@@ -614,7 +614,7 @@ header {
 
 /*start fixed section*/
 .fixed-section {
-    background-image: url(../images/fixed-sec.jpg);
+    background-image: url(../../assets/images/fixed-sec.jpg);
     position: relative;
     background-size: cover;
     min-height: 250px;
@@ -845,7 +845,7 @@ footer {
 
 /*start projects page*/
 .sub-intro {
-    background: linear-gradient(#0000002b, #0000005c), url(../images/property.jpg) no-repeat bottom;
+    background: linear-gradient(#0000002b, #0000005c), url(../../assets/images/property.jpg) no-repeat bottom;
     padding: 8% 0%;
     background-size: cover;
 
@@ -1031,7 +1031,7 @@ footer {
 
 /*start contact page*/
 .contact-intro {
-    background: linear-gradient(#0000002b, #0000005c), url(../images/home-contact.jpg) no-repeat center;
+    background: linear-gradient(#0000002b, #0000005c), url(../../assets/images/home-contact.jpg) no-repeat center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 350px;
@@ -1039,7 +1039,7 @@ footer {
 }
 
 .contact-info {
-    background: #092531f0 url(../images/contact-bg.png) no-repeat bottom;
+    background: #092531f0 url(../../assets/images/contact-bg.png) no-repeat bottom;
     background-size: cover;
     padding: 3% 0%;
 
@@ -1201,7 +1201,7 @@ footer {
 
 /*start property pages*/
 .property-intro {
-    background: linear-gradient(#0000002b, #0000005c), url(../images/property-bg.jpg) no-repeat bottom;
+    background: linear-gradient(#0000002b, #0000005c), url(../../assets/images/property-bg.jpg) no-repeat bottom;
     background-size: cover;
 }
 
@@ -1253,7 +1253,7 @@ footer {
 
 /*start article page*/
 .article-intro {
-    background-image: url(../images/article-bg.jpg);
+    background-image: url(../../assets/images/article-bg.jpg);
     margin-bottom: 5%;
 
     h1 {

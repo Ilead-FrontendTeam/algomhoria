@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="dexcription" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="kareem morsy">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AlGomhoria</title>
+
+
+    <!-- CSS only -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../assets/css/jquery.dataTables.css" rel="stylesheet">
+    <link href="../assets/css/select2.min.css" rel="stylesheet" />
+    <link href="../assets/css/slick.css" rel="stylesheet">
+    <link href="../assets/css/slick-theme.css" rel="stylesheet">
+    <link href="../assets/css/all.css" rel="stylesheet">
+    <link href="../assets/css/animate.min.css" rel="stylesheet">
+    <link href="../assets/css/hover.css" rel="stylesheet">
+    <link href="../assets/css/style-rtl.css" rel="stylesheet">
+
+</head>
+
+
+
+
+<body>
+
+
+    <!--start header section-->
+    <header>
+        <div class="container">
+
+            <div class="header-details">
+
+                <a href="index.html" class="website-logo">
+                    <img src="../assets/images/logo.png" alt="logo" />
+                </a>
+
+                <div class="header-info">
+
+                    <div class="header-search">
+                        <form>
+                            <input type="text" class="form-control" placeholder="Search By ID" />
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="header-contact">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <div class="header-contact-text">
+                            <p>Call Us Anytime</p>
+                            <a href="#">01288818000</a>
+                        </div>
+                    </div>
+
+                    <div class="header-contact">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <div class="header-contact-text">
+                            <p>Call Us Anytime</p>
+                            <a href="#">info@algomhoria.com</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mobile-header-details">
+
+
+                <a href="#" type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </a>
+                <a href="#"><span><i class="fa-solid fa-phone"></i></span></a>
+                <a href="#"><span><i class="fa-solid fa-envelope"></i></span></a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <div class="mob-header-search">
+                                    <form>
+                                        <input type="text" class="form-control" placeholder="Search By ID" />
+                                        <button type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <nav class="navbar navbar-expand-lg" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo.png" alt="logo" /></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="who.html">Who are we</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Properties
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="property-pages.html">For rent</a></li>
+                                    <li><a class="dropdown-item" href="property-pages.html">For sale</a></li>
+                                    <li><a class="dropdown-item" href="property-pages.html">For rent or sale</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="booking.html">Booking</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="add-property-free.html">Add properity free</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="blog.html">General News</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Realstate News</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="refund.html">Refund Policy</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact us</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Login
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                               <a class="nav-link" href="index.html">العربية</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--end header section-->
+
+
+    <!--start sub intro section-->
+    <section class="sub-intro single-project-intro">
+        <div class="container">
+            <div class="sub-intro-content">
+
+                <h1>
+                    Carnelia Ain ElSokhna
+                </h1>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Projects</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Bianchi Ilios
+                        </li>
+                    </ol>
+                </nav>
+
+            </div>
+        </div>
+    </section>
+    <!--end sub intro section-->
+
+
+
+    <!--start single project section-->
+    <section class="single-project">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 col-12">
+                    <div class="single-project-details">
+                        <div class="single-item">
+                            <h2>Catalan Compound - New Capital</h2>
+                            <div class="single-item-locaion">
+                                <span><i class="fa-solid fa-location-dot"></i></span>
+                                <h5>Zamalek</h5>
+                            </div>
+
+                            <div class="gallary">
+                                <div class="gallary-title">
+                                    <span><i class="fa-solid fa-image"></i></span>
+                                    <h6>Photo Gallary</h6>
+                                </div>
+                                <div class="slider-for">
+                                    <div class="item">
+                                        <img src="../assets/images/blog1.jpg" alt="image" draggable="false" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="../assets/images/blog2.jpg" alt="image" draggable="false" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="../assets/images/blog3.jpg" alt="image" draggable="false" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="../assets/images/blog4.jpg" alt="image" draggable="false" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="../assets/images/blog5.jpg" alt="image" draggable="false" />
+                                    </div>
+                                </div>
+
+                                <div class="slider-nav">
+                                    <div class="item">
+                                        <img src="../assets/images/blog1.jpg" alt="image" draggable="false" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="../assets/images/blog2.jpg" alt="image" draggable="false" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="../assets/images/blog3.jpg" alt="image" draggable="false" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="../assets/images/blog4.jpg" alt="image" draggable="false" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="../assets/images/blog5.jpg" alt="image" draggable="false" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item">
+                            <h2>Description</h2>
+                            <p>
+                                During the last period, Egypt witnessed an investment boom in real estate investment,
+                                and this is evidenced by the demand and competition from international real estate
+                                companies to build residential projects in distinctive areas such as the North Coast,
+                                Ain Sukhna and other distinctive areas in Egypt, which are located on sandy beaches with
+                                clear blue waters.
+                            </p>
+                        </div>
+
+
+                        <div class="single-item">
+                            <div class="projects-tabs">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Commercial
+                                            projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="pill" href="#tab2">Administrative
+                                            Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="pill" href="#tab3">Residential Projects</a>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane container active" id="tab1">
+                                        <h4>Commercial projects</h4>
+                                        <p>Unavaliable</p>
+                                    </div>
+
+                                    <div class="tab-pane container fade slide2" id="tab2">
+                                        <h4>Administrative Projects</h4>
+                                        <p>Unavaliable</p>
+
+                                    </div>
+
+                                    <div class="tab-pane container fade slide2" id="tab3">
+                                        <h4>Residential Projects</h4>
+                                        <p>Unavaliable</p>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="single-item">
+                            <h2>Location</h2>
+                            <div class="project-iframe">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5233.98506905127!2d12.098925!3d49.010727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xafce9d7fc6cb247d!2scomma!5e0!3m2!1sen!2sus!4v1663676325118!5m2!1sen!2sus"
+                                    width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <div class="single-item">
+                            <h2>Facilities</h2>
+                            <div class="item-ul">
+                                <ul>
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Parking Space
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Internet Access
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Air Condition
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Sattelite Connection
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Swimming Pool
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Closed Compound
+
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="single-item">
+                            <h2>Units</h2>
+                            <div class="item-ul">
+                                <ul>
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Parking Space
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Internet Access
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Air Condition
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Sattelite Connection
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Swimming Pool
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Closed Compound
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Closed Compound
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Closed Compound
+
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Closed Compound
+
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Closed Compound
+
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Closed Compound
+
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        Closed Compound
+
+                                    </li>
+
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="single-project-form">
+                        <h4>Send to ad owner </h4>
+                        <form>
+                            <div class="form-group">
+                                <label>name</label>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group">
+                                <label> E-mail </label>
+                                <input type="email" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group">
+                                <label> Phone </label>
+                                <input type="phone" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea rows="4" class="form-control"></textarea>
+                            </div>
+
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="featured-projects-slider">
+                        <h4>Featured projects</h4>
+                        <div class="project-sub-slider">
+                            <div>
+                                <a href="project-sub-slider-link">
+                                    <div class="project-sub-slider-img">
+                                        <img src="../assets/images/projct4.jpg" alt="slider-img" />
+                                    </div>
+    
+                                    <h5>Compound Evora New Cairo</h5>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="project-sub-slider-link">
+                                    <div class="project-sub-slider-img">
+                                        <img src="../assets/images/project1.jpg" alt="slider-img" />
+                                    </div>
+    
+                                    <h5>Compound Evora New Cairo</h5>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="project-sub-slider-link">
+                                    <div class="project-sub-slider-img">
+                                        <img src="../assets/images/perojects2.jpg" alt="slider-img" />
+                                    </div>
+    
+                                    <h5>Compound Evora New Cairo</h5>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="project-sub-slider-link">
+                                    <div class="project-sub-slider-img">
+                                        <img src="../assets/images/projects5.jpg" alt="slider-img" />
+                                    </div>
+    
+                                    <h5>Compound Evora New Cairo</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end single project section-->
+
+
+
+
+
+
+
+
+
+
+
+    <!--start footer section-->
+    <footer>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4 col-12">
+                    <div class="logo-img">
+                        <img src="../assets/images/logo.png" alt="logo" />
+                    </div>
+                    <h4 class="footer-desc">
+                        Algomhoria ... offers all services for searching and viewing apartments, villas, shops and more
+                        for free. If you are looking for an apartment for rent
+                    </h4>
+
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <h4 class="footer-title">Get In Touch</h4>
+                    <div class="branch-details">
+                        <h6>- main branch : </h6>
+                        <p>18 ahmed heshmat st. ,zamalek </p>
+                        <a href="#">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            01288818000
+                        </a>
+                    </div>
+
+                    <div class="branch-details">
+                        <h6>- north coast branch : </h6>
+                        <p>marina, front of gate (5) ,above zahran market </p>
+                        <a href="#">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            01288818000
+                        </a>
+                    </div>
+
+
+                    <div class="branch-details">
+                        <h6>- 6 of october branch : </h6>
+                        <p>el-hay el (8) , mgawra (1) , building numper (152) </p>
+                        <a href="#">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            01288818000
+                        </a>
+                    </div>
+
+                    <div class="footer-contact">
+                        <div class="footer-contact-info">
+                            <p>Email :</p>
+                            <a href="#">info@algomhoria.com</a>
+                        </div>
+
+                        <div class="footer-contact-info">
+                            <p>Phone :</p>
+                            <a href="#">01288818000</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="news-letter">
+                        <h4 class="footer-title text-center">News letter</h4>
+                        <form>
+                            <input type="text" class="form-control" placeholder="Your Email" />
+                            <button type="submit" class="btn">Send</button>
+                        </form>
+                    </div>
+
+
+
+                    <div class="footer-social">
+                        <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="linked-in"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="rights">
+            <p>
+                All Rights Reserved © Algomhoria.com 2022 | Powered By
+                <a href="#">iLead Integrated Solutions ®</a>
+            </p>
+        </div>
+
+
+    </footer>
+    <!--end footer section-->
+
+
+
+    <script src="../assets/js/jquery-3.5.1.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/all.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,7 +1,3 @@
-@font-face {
-  font-family: helv;
-  src: url(../fonts/Helvetica\ Neue\ Medium\ Extended.ttf);
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +11,6 @@ body {
   padding: 0px;
   overflow-x: hidden;
   font-family: Helvetica, sans-serif;
-  direction: rtl;
 }
 
 .row {
@@ -27,6 +22,18 @@ ul {
   list-style-type: none;
   margin: 0px !important;
   padding: 0px !important;
+}
+
+select::-moz-placeholder {
+  text-align: left;
+}
+
+select:-ms-input-placeholder {
+  text-align: left;
+}
+
+select::placeholder {
+  text-align: left;
 }
 
 a {
@@ -85,6 +92,7 @@ a {
   font-size: 18px;
   font-weight: bold;
   color: #092531;
+  text-align: left;
 }
 .standard-card .standard-card-link .property-tag {
   position: absolute;
@@ -143,7 +151,7 @@ a {
   color: #092531;
 }
 .standard-card .standard-card-link .location span {
-  margin-right: 5px;
+  margin: 0px 5px;
 }
 .standard-card:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -205,10 +213,17 @@ a {
   padding: auto 8%;
   margin-top: 0px;
 }
+.sticky .navbar-nav {
+  justify-content: center !important;
+}
+.sticky .navbar-nav .nav-item .nav-link {
+  padding: 15px !important;
+}
 
 .paginationg {
   margin: 35px auto;
   text-align: center;
+  direction: ltr;
 }
 .paginationg .navigation {
   width: 60%;
@@ -229,6 +244,10 @@ a {
 }
 .paginationg .page-link:focus {
   box-shadow: none !important;
+}
+
+.breadcrumb-item::before {
+  float: left !important;
 }
 
 /*end Global classes*/
@@ -323,7 +342,7 @@ header .header-details .header-info .header-contact a {
 header .header-details .header-info .header-contact span {
   display: block;
   color: #ffffff;
-  margin-left: 15px;
+  margin-right: 15px;
   font-size: 30px;
 }
 header nav {
@@ -494,7 +513,7 @@ header nav .navbar-nav {
 /*end projects section*/
 /*start fixed section*/
 .fixed-section {
-  background-image: url(../images/fixed-sec.jpg);
+  background-image: url(../../assets/images/fixed-sec.jpg);
   position: relative;
   background-size: cover;
   min-height: 250px;
@@ -588,6 +607,7 @@ footer .news-letter form {
   margin-bottom: 45px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 35px;
+  direction: ltr;
 }
 footer .news-letter form input {
   border-radius: 5px 0px 0px 5px;
@@ -664,7 +684,7 @@ footer .rights a {
 /*end footer section*/
 /*start projects page*/
 .sub-intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../images/property.jpg) no-repeat bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../../assets/images/property.jpg) no-repeat bottom;
   padding: 8% 0%;
   background-size: cover;
 }
@@ -716,6 +736,7 @@ footer .rights a {
 .projects-slider .project-slider .project-title {
   display: flex;
   margin-bottom: 25px;
+  text-align: left;
 }
 .projects-slider .project-slider .project-title h4 {
   color: #cb9b4d;
@@ -728,6 +749,9 @@ footer .rights a {
   text-decoration: underline !important;
   font-size: 19px;
   padding-top: 3px;
+}
+.projects-slider .project-slider .proj-slider {
+  direction: ltr !important;
 }
 .projects-slider .project-slider .proj-slider .standard-card {
   width: 95%;
@@ -751,7 +775,7 @@ footer .rights a {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.15);
   color: #ffffff;
-  right: -30px;
+  right: -45px;
 }
 
 /*end projects page*/
@@ -788,7 +812,7 @@ footer .rights a {
 /*end identity page*/
 /*start contact page*/
 .contact-intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../images/home-contact.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../../assets/images/home-contact.jpg) no-repeat center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 350px;
@@ -796,7 +820,7 @@ footer .rights a {
 }
 
 .contact-info {
-  background: rgba(9, 37, 49, 0.9411764706) url(../images/contact-bg.png) no-repeat bottom;
+  background: rgba(9, 37, 49, 0.9411764706) url(../../assets/images/contact-bg.png) no-repeat bottom;
   background-size: cover;
   padding: 3% 0%;
 }
@@ -917,7 +941,7 @@ footer .rights a {
 /*end blog page*/
 /*start property pages*/
 .property-intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../images/property-bg.jpg) no-repeat bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../../assets/images/property-bg.jpg) no-repeat bottom;
   background-size: cover;
 }
 
@@ -955,7 +979,7 @@ footer .rights a {
 /*end property pages*/
 /*start article page*/
 .article-intro {
-  background-image: url(../images/article-bg.jpg);
+  background-image: url(../../assets/images/article-bg.jpg);
   margin-bottom: 5%;
 }
 .article-intro h1 {
@@ -1060,7 +1084,7 @@ footer .rights a {
   padding: 0px 21px;
 }
 .single-project .single-project-details .single-item .single-item-locaion span {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .single-project .single-project-details .single-item .gallary .gallary-title {
   display: flex;
@@ -1075,7 +1099,6 @@ footer .rights a {
   display: block;
   position: absolute;
   bottom: 0px;
-  left: 0px;
 }
 .single-project .single-project-details .single-item .gallary .gallary-title span {
   margin-right: 5px;
@@ -1504,6 +1527,110 @@ footer .rights a {
 }
 
 /*end profile page*/
+/*start add properrty page*/
+.add-property-sec {
+  padding: 5% 0%;
+  background-color: #f7f8f8;
+}
+.add-property-sec h2 {
+  margin-bottom: 25px;
+}
+.add-property-sec form label {
+  color: #3a464e;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.add-property-sec form input {
+  margin-bottom: 35px;
+  background-color: #ffffff;
+}
+.add-property-sec form select {
+  margin-bottom: 35px;
+  background-color: #ffffff;
+}
+.add-property-sec form .row > * {
+  padding-left: 5px;
+}
+.add-property-sec form .first-row {
+  margin-bottom: 5%;
+  border-bottom: 1px solid #3a464e;
+  padding: 45px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.add-property-sec form .first-row .form-group {
+  flex-wrap: wrap;
+  width: 33, 33%;
+}
+.add-property-sec form .first-row .form-group label {
+  display: block;
+}
+.add-property-sec form .first-row .form-group .select2-container {
+  width: 260px !important;
+}
+.add-property-sec form .second-row {
+  border-bottom: 1px solid #3a464e;
+  padding: 45px 10px;
+}
+.add-property-sec form .second-row .Location-search {
+  margin-bottom: 55px;
+}
+.add-property-sec form .third-row {
+  border-bottom: 1px solid #3a464e;
+  padding: 45px 10px;
+}
+.add-property-sec form .third-row textarea {
+  margin-bottom: 18px;
+}
+.add-property-sec form .third-row .facilities {
+  -moz-columns: 2;
+       columns: 2;
+}
+.add-property-sec form .third-row .facilities .form-check {
+  margin-bottom: 25px;
+}
+.add-property-sec form .third-row .facilities .form-check input {
+  float: left;
+}
+.add-property-sec form .third-row .facilities .form-check label {
+  margin-left: 25px;
+}
+.add-property-sec form .third-row .Services {
+  -moz-columns: 2;
+       columns: 2;
+}
+.add-property-sec form .third-row .Services .form-check {
+  margin-bottom: 18px;
+}
+.add-property-sec form .third-row .Services .form-check input {
+  float: left;
+}
+.add-property-sec form .fourth-row {
+  padding: 45px 10px;
+}
+.add-property-sec form .fourth-row .image_box {
+  margin-bottom: 35px;
+}
+.add-property-sec form .fourth-row .image_box a {
+  color: #ffffff;
+}
+.add-property-sec form .fourth-row .youtube-text {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.add-property-sec form button {
+  color: #ffffff;
+  background-color: #092531;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 45px;
+  margin: 25px auto;
+}
+
+/*end add property page*/
 @media (max-width: 767px) {
   /*start index page*/
   /*start header section*/
@@ -1602,6 +1729,17 @@ footer .rights a {
     width: 100% !important;
   }
   /*end article page*/
+  /*start add new property page*/
+  .add-property-sec form .first-row {
+    flex-wrap: wrap;
+  }
+  .add-property-sec form .first-row .form-group {
+    margin-bottom: 15px !important;
+  }
+  .add-property-sec form .third-row .facilities .form-check label, .add-property-sec form .third-row .Services .form-check label {
+    margin-left: 0px !important;
+  }
+  /*end add new property page*/
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /*start header section*/
@@ -1647,6 +1785,25 @@ footer .rights a {
     font-size: 19px !important;
   }
   /*end footer section*/
+  /*start add new property page*/
+  .add-property-sec form .first-row {
+    flex-wrap: wrap;
+  }
+  .add-property-sec form .first-row .form-group {
+    margin-bottom: 15px !important;
+  }
+  .add-property-sec form .third-row .facilities .form-check label {
+    margin-left: 0px !important;
+  }
+  /*end add new property page*/
+  /*start project page*/
+  .projects-slider .slick-prev {
+    left: -35px !important;
+  }
+  .projects-slider .slick-next {
+    right: -35px !important;
+  }
+  /*end project page*/
 }
 @media (min-width: 992px) and (max-width: 1300px) {
   /*start header section*/
@@ -1662,4 +1819,4 @@ footer .rights a {
     font-size: 15px !important;
   }
   /*end intro section*/
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style-ltr.css.map */
