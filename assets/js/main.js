@@ -108,3 +108,20 @@ $('#example2').DataTable();
 $('#example3').DataTable();
 $('#example4').DataTable();
 $('#example5').DataTable();
+
+
+
+
+$(".payment-package-card").click(function(){
+  $(this).addClass('selected');
+  $(this).parent().siblings().children().hasClass("selected") && $(this).parent().siblings().children().removeClass("selected")
+
+});
+
+
+$(".payment-method-card").click(function(){
+  $(this).addClass('selected');
+  $(this).parent().siblings().children().hasClass("selected") && $(this).parent().siblings().children().removeClass("selected")
+
+});
+

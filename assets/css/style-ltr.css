@@ -24,18 +24,6 @@ ul {
   padding: 0px !important;
 }
 
-select::-moz-placeholder {
-  text-align: left;
-}
-
-select:-ms-input-placeholder {
-  text-align: left;
-}
-
-select::placeholder {
-  text-align: left;
-}
-
 a {
   text-decoration: none !important;
 }
@@ -49,6 +37,7 @@ a {
 .select2-container .select2-selection--single {
   height: 38px !important;
   border-radius: 5px !important;
+  border: 1px solid #ced4da !important;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -57,6 +46,11 @@ a {
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   top: 5px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__clear {
+  margin-top: 5px !important;
+  margin-right: 25px !important;
 }
 
 #date {
@@ -250,6 +244,31 @@ a {
   float: left !important;
 }
 
+iframe {
+  width: 100%;
+}
+
+.date .form-control {
+  border-radius: 5px !important;
+}
+
+.datepicker td, .datepicker th {
+  font-size: 14px !important;
+  color: #3a464e;
+}
+
+.form-select:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler {
+  border: 0px solid transparent !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
 /*end Global classes*/
 /*start header section*/
 header {
@@ -268,11 +287,12 @@ header .mobile-header-details {
   padding: 10px 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-header .mobile-header-details a {
+header .mobile-header-details a, header .mobile-header-details button {
   color: #ffffff;
   font-size: 20px;
+  background-color: transparent;
 }
-header .mobile-header-details a::before {
+header .mobile-header-details a::before, header .mobile-header-details button::before {
   content: "";
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   display: inline-block;
@@ -357,7 +377,6 @@ header nav .nav-item {
   transition: all 0.2s ease-in;
 }
 header nav .nav-item:hover {
-  background-color: #ffffff;
   color: #3a464e !important;
 }
 header nav .nav-item .nav-link {
@@ -376,14 +395,27 @@ header nav .nav-item .dropdown-menu .dropdown-item {
   font-size: 15px !important;
   font-weight: 500;
 }
+header nav .nav-item:not(.dropdown):hover {
+  background-color: #ffffff;
+}
+header nav .menu-item {
+  color: #ffffff;
+}
 header nav .nav-item .nav-link {
   color: #ffffff;
   font-weight: 600;
   font-size: 16px;
 }
+header nav .nav-item .dropdown-menu {
+  text-align: left;
+}
 header nav .navbar-nav {
   justify-content: space-around !important;
   width: 100%;
+}
+
+.dropdown-menu li .dropdown-item:hover nav-item.dropdown nav-link {
+  color: #3a464e !important;
 }
 
 /*end header section*/
@@ -431,7 +463,7 @@ header nav .navbar-nav {
   color: #000;
   font-weight: bold;
 }
-.intro .home-tabs .tab-content button {
+.intro .home-tabs .tab-content .search-sec-btn {
   background-color: #cb9b4d;
   display: flex;
   justify-content: center;
@@ -517,7 +549,7 @@ header nav .navbar-nav {
   position: relative;
   background-size: cover;
   min-height: 250px;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -701,6 +733,10 @@ footer .rights a {
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
+}
+.sub-intro .breadcrumb .breadcrumb-item::before {
+  margin: 0px 5px !important;
+  color: #ffffff;
 }
 .sub-intro .breadcrumb .breadcrumb-item a {
   color: #ffffff;
@@ -1215,6 +1251,7 @@ footer .rights a {
   background-color: #ffffff;
   border-radius: 5px;
   margin: 25px 0px;
+  direction: ltr;
 }
 .single-project .featured-projects-slider h4 {
   color: #464646;
@@ -1258,7 +1295,7 @@ footer .rights a {
   color: #3a464e;
   font-size: 16px;
 }
-.partnership .partnership-form h2 {
+.partnership .partnership-form h1 {
   font-size: 41px;
   font-weight: 500;
   color: #3a464e;
@@ -1465,6 +1502,7 @@ footer .rights a {
   padding: 15px;
   min-height: 450px;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 .profile .points-payment .payment-packages .payment-package-card h4 {
   text-align: center;
@@ -1484,14 +1522,20 @@ footer .rights a {
 .profile .points-payment .payments-methods .payment-method-card {
   width: 100%;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  cursor: pointer;
 }
 .profile .points-payment .payments-methods .payment-method-card img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   border-radius: 5px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .profile .points-payment button {
   width: 120px;
@@ -1532,6 +1576,10 @@ footer .rights a {
 }
 .profile .profile-property-tabs .tab-content {
   padding-top: 5%;
+}
+
+.selected {
+  background-color: rgb(241, 236, 236);
 }
 
 .profile-table {
@@ -1759,6 +1807,44 @@ footer .rights a {
     width: 100% !important;
   }
   /*end partnership page*/
+  /*start profile pages*/
+  .profile .profile-card {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .profile .profile-property-tabs .nav-pills .nav-item {
+    width: 100%;
+  }
+  .profile .profile-property-tabs .nav-pills .nav-item .nav-link.active {
+    border-top: 0px solid #092531;
+    border-right: 0px solid #092531;
+    border-left: 0px solid #092531;
+    border-bottom: 1px solid #092531;
+    border-radius: 0px 0px 0px 0px;
+  }
+  .profile .profile-property-tabs .dataTables_length {
+    margin: 25px 0px;
+  }
+  .profile .dataTables_wrapper .dataTables_paginate {
+    margin-bottom: 35px;
+  }
+  /*end profile pages*/
+  /*start single project page*/
+  .single-project .single-project-details .single-item .projects-tabs .nav-pills .nav-item {
+    width: 100%;
+  }
+  .single-project .single-project-details .single-item .projects-tabs .nav-pills .nav-link.active {
+    border-top: 0px solid #092531;
+    border-right: 0px solid #092531;
+    border-left: 0px solid #092531;
+    border-bottom: 1px solid #092531;
+    border-radius: 0px 0px 0px 0px;
+  }
+  .single-project .single-project-details .single-item .item-ul ul {
+    -moz-columns: 1;
+         columns: 1;
+  }
+  /*end single project page*/
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /*start header section*/
@@ -1815,6 +1901,11 @@ footer .rights a {
     margin-left: 0px !important;
   }
   /*end add new property page*/
+  /*start single project page*/
+  .single-project .single-project-details .single-item .projects-tabs .nav-pills .nav-link {
+    font-size: 15px;
+  }
+  /*end single project page*/
 }
 @media (min-width: 992px) and (max-width: 1300px) {
   /*start header section*/
