@@ -554,7 +554,7 @@ header nav .navbar-nav {
 /*end projects section*/
 /*start fixed section*/
 .fixed-section {
-  background-image: url(../images/fixed-sec.jpg);
+  background-image: url(../images/fixed-sec.webp);
   position: relative;
   background-size: cover;
   min-height: 250px;
@@ -729,7 +729,7 @@ footer .rights a {
 /*end footer section*/
 /*start projects page*/
 .sub-intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../images/property.jpg) no-repeat bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../images/property.webp) no-repeat bottom;
   padding: 8% 0%;
   background-size: cover;
 }
@@ -859,7 +859,7 @@ footer .rights a {
 /*end identity page*/
 /*start contact page*/
 .contact-intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../images/home-contact.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../images/home-contact.webp) no-repeat center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 350px;
@@ -867,7 +867,7 @@ footer .rights a {
 }
 
 .contact-info {
-  background: rgba(9, 37, 49, 0.9411764706) url(../images/contact-bg.png) no-repeat bottom;
+  background: rgba(9, 37, 49, 0.9411764706) url(../images/contact-bg.webp) no-repeat bottom;
   background-size: cover;
   padding: 3% 0%;
 }
@@ -988,7 +988,7 @@ footer .rights a {
 /*end blog page*/
 /*start property pages*/
 .property-intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../images/property-bg.jpg) no-repeat bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.168627451), rgba(0, 0, 0, 0.3607843137)), url(../images/property-bg.webp) no-repeat bottom;
   background-size: cover;
 }
 
@@ -1026,7 +1026,7 @@ footer .rights a {
 /*end property pages*/
 /*start article page*/
 .article-intro {
-  background-image: url(../images/article-bg.jpg);
+  background-image: url(../images/article-bg.webp);
   margin-bottom: 5%;
 }
 .article-intro h1 {
