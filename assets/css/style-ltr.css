@@ -148,7 +148,7 @@ a {
   margin: 0px 5px;
 }
 .standard-card:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 .property-color-bar {
@@ -252,7 +252,8 @@ iframe {
   border-radius: 5px !important;
 }
 
-.datepicker td, .datepicker th {
+.datepicker td,
+.datepicker th {
   font-size: 14px !important;
   color: #3a464e;
 }
@@ -267,6 +268,11 @@ iframe {
 
 .navbar-toggler:focus {
   box-shadow: none !important;
+}
+
+.slick-prev::before, .slick-next::before {
+  color: #e9e0e0 !important;
+  font-size: 25px;
 }
 
 /*end Global classes*/
@@ -287,12 +293,14 @@ header .mobile-header-details {
   padding: 10px 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-header .mobile-header-details a, header .mobile-header-details button {
+header .mobile-header-details a,
+header .mobile-header-details button {
   color: #ffffff;
   font-size: 20px;
   background-color: transparent;
 }
-header .mobile-header-details a::before, header .mobile-header-details button::before {
+header .mobile-header-details a::before,
+header .mobile-header-details button::before {
   content: "";
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   display: inline-block;
@@ -426,7 +434,8 @@ header nav .navbar-nav {
 .intro .home-tabs {
   border: 10px solid #cb9b4d;
   padding: 10px;
-  height: 100%;
+  height: auto;
+  padding: 5% 0px;
 }
 .intro .home-tabs .nav-pills {
   width: 100%;
@@ -647,8 +656,12 @@ footer .news-letter form input {
 footer .news-letter form button {
   background-color: #cb9b4d;
   border-radius: 0px 5px 5px 0px;
-  background-color: #cb9b4d;
   color: #ffffff;
+}
+footer .news-letter form button:hover {
+  background-color: #cb9b4d !important;
+  border-radius: 0px 5px 5px 0px;
+  color: #ffffff !important;
 }
 footer .footer-social {
   display: flex;
@@ -801,7 +814,6 @@ footer .rights a {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.15);
   color: #ffffff;
   left: -45px;
 }
@@ -809,7 +821,6 @@ footer .rights a {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.15);
   color: #ffffff;
   right: -45px;
 }

@@ -61,9 +61,9 @@ a {
     top: 5px !important;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__clear{
+.select2-container--default .select2-selection--single .select2-selection__clear {
     margin-top: 5px !important;
-    margin-#{$end} : 25px !important;
+    margin-#{$end}: 25px !important;
 }
 
 #date {
@@ -174,7 +174,7 @@ a {
     }
 
     &:hover {
-        box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .15);
     }
 }
 
@@ -240,8 +240,9 @@ a {
 
     .navbar-nav {
         justify-content: center !important;
-        .nav-item{
-            .nav-link{
+
+        .nav-item {
+            .nav-link {
                 padding: 15px !important;
             }
         }
@@ -284,13 +285,13 @@ a {
 
 }
 
-.breadcrumb-item{
-        &::before{
-            float: $start !important;
-        }
+.breadcrumb-item {
+    &::before {
+        float: $start !important;
+    }
 }
 
-iframe{
+iframe {
     width: 100%;
 }
 
@@ -302,25 +303,30 @@ iframe{
 }
 
 
-.datepicker td, .datepicker th{
+.datepicker td,
+.datepicker th {
     font-size: 14px !important;
     color: $text-color;
 }
 
-.form-select:focus{
+.form-select:focus {
     box-shadow: none !important;
 }
 
 
-.navbar-toggler{
+.navbar-toggler {
     border: 0px solid transparent !important;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: none !important;
 }
 
-
+.slick-prev::before, .slick-next::before{
+    color: #e9e0e0 !important;
+    font-size: 25px;
+    // box-shadow: 0 10px 10px rgba(0, 0, 0, .15);
+}
 
 /*end Global classes*/
 
@@ -342,7 +348,8 @@ header {
         padding: 10px 30px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
 
-        a , button {
+        a,
+        button {
             color: $white-color;
             font-size: 20px;
             background-color: transparent;
@@ -448,7 +455,7 @@ header {
         .navbar-brand {
             display: none;
         }
-       
+
         .nav-item {
             transition: all .2s ease-in;
 
@@ -475,17 +482,18 @@ header {
                     font-size: 15px !important;
                     font-weight: 500;
                 }
-                
+
             }
         }
+
         .nav-item:not(.dropdown) {
-            
+
             &:hover {
                 background-color: $white-color;
             }
         }
 
-        .menu-item{
+        .menu-item {
             color: $white-color;
         }
 
@@ -496,7 +504,7 @@ header {
                 font-size: 16px;
             }
 
-            .dropdown-menu{
+            .dropdown-menu {
                 text-align: $start;
             }
         }
@@ -508,9 +516,9 @@ header {
     }
 }
 
-.dropdown-menu li .dropdown-item:hover nav-item.dropdown nav-link{
+.dropdown-menu li .dropdown-item:hover nav-item.dropdown nav-link {
     color: $text-color !important;
-    
+
 }
 
 /*end header section*/
@@ -522,7 +530,8 @@ header {
     .home-tabs {
         border: 10px solid $sub-color;
         padding: 10px;
-        height: 100%;
+        height: auto;
+        padding: 5% 0px;
 
         .nav-pills {
             width: 100%;
@@ -569,7 +578,7 @@ header {
                 }
             }
 
-            .search-sec-btn{
+            .search-sec-btn {
                 background-color: $sub-color;
                 display: flex;
                 justify-content: center;
@@ -813,8 +822,13 @@ footer {
             button {
                 background-color: $sub-color;
                 border-radius: 0px 5px 5px 0px;
-                background-color: $sub-color;
                 color: $white-color;
+
+                &:hover {
+                    background-color: $sub-color !important;
+                    border-radius: 0px 5px 5px 0px;
+                    color: $white-color !important;
+                }
             }
         }
 
@@ -938,13 +952,15 @@ footer {
             color: $white-color;
             font-size: 18px;
             font-weight: 500;
-            &::before{
+
+            &::before {
                 margin: 0px 5px !important;
                 color: $white-color;
             }
+
             a {
                 color: $white-color;
-                
+
             }
         }
     }
@@ -984,6 +1000,7 @@ footer {
     // direction: ltr !important;
 
     .project-slider {
+
         // direction: ltr !important;
         .project-title {
             display: flex;
@@ -995,7 +1012,7 @@ footer {
                 font-size: 25px;
                 margin-#{$end}: 10px;
                 font-weight: 500;
-                
+
             }
 
             a {
@@ -1009,6 +1026,7 @@ footer {
 
         .proj-slider {
             direction: ltr !important;
+
             .standard-card {
                 width: 95%;
                 margin-#{$end}: 10px;
@@ -1025,7 +1043,6 @@ footer {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: rgba(0, 0, 0, 0.15);
         color: $white-color;
         left: -45px;
     }
@@ -1034,7 +1051,6 @@ footer {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: rgba(0, 0, 0, 0.15);
         color: $white-color;
         right: -45px;
 
@@ -1481,6 +1497,7 @@ footer {
 
             .gallary {
                 direction: ltr !important;
+
                 .gallary-title {
                     display: flex;
                     padding: 0px 10px;
@@ -1739,10 +1756,10 @@ footer {
                     margin: 25px 0px;
                 }
 
-                
+
             }
 
-            .remember-me{
+            .remember-me {
                 margin: 15px 0px;
                 color: $text-color;
             }
@@ -1931,7 +1948,7 @@ footer {
 
     }
 
-   
+
 
     .profile-booking {
         #example_info {
@@ -1939,15 +1956,17 @@ footer {
         }
     }
 
-    .charge-points{
+    .charge-points {
         display: flex;
         height: 80px;
         width: 100%;
         justify-content: space-between;
-        .points-num{
+
+        .points-num {
             margin-top: 10px;
         }
-        a{
+
+        a {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1960,16 +1979,17 @@ footer {
 
     }
 
-    .points-payment{
+    .points-payment {
         padding: 10px;
-        h3{
+
+        h3 {
             margin: 10px 15px 25px 10px;
             font-weight: bold;
             color: $text-color
         }
 
-        .payment-packages{
-            .payment-package-card{
+        .payment-packages {
+            .payment-package-card {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -1981,7 +2001,7 @@ footer {
                 margin-bottom: 25px;
                 cursor: pointer;
 
-                h4{
+                h4 {
                     text-align: center;
                     font-size: 25px;
                     font-weight: bold;
@@ -1989,7 +2009,7 @@ footer {
                     color: $sub-color;
                 }
 
-                p{
+                p {
                     margin: 10px 0px;
                     text-align: center;
                     font-size: 15px;
@@ -2001,8 +2021,8 @@ footer {
             }
         }
 
-        .payments-methods{
-            .payment-method-card{
+        .payments-methods {
+            .payment-method-card {
                 width: 100%;
                 height: 50px;
                 display: flex;
@@ -2012,16 +2032,17 @@ footer {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                 border-radius: 5px;
                 cursor: pointer;
-                img{
+
+                img {
                     width: 80%;
                     height: 80%;
                     border-radius: 5px;
-                    object-fit: contain;                   
+                    object-fit: contain;
                 }
             }
         }
 
-        button{
+        button {
             width: 120px;
             height: 45px;
             background-color: $btn-bg;
@@ -2034,20 +2055,20 @@ footer {
         }
     }
 
-    .profile-property-tabs{
+    .profile-property-tabs {
         .nav-pills {
             width: 100%;
             margin-bottom: 25px;
-    
+
             .nav-item {
                 width: 20%;
                 text-align: center;
             }
-    
+
             .nav-link {
                 color: $text-color;
             }
-    
+
             .nav-link.active {
                 background-color: transparent;
                 border-top: 1px solid $main-color;
@@ -2056,32 +2077,33 @@ footer {
                 border-bottom: 0px solid $main-color;
                 border-radius: 5px 5px 0px 0px;
             }
-    
+
             .nav-link:not(.active) {
                 border-top: 0px solid $main-color;
                 border-#{$end}: 0px solid $main-color;
                 border-#{$start}: 0px solid $main-color;
                 border-bottom: 1px solid $main-color;
                 border-radius: 0px 0px 0px 0px;
-    
+
             }
-    
-    
+
+
         }
 
-        .tab-content{
+        .tab-content {
             padding-top: 5%;
         }
     }
-    
+
 }
 
-.selected{
+.selected {
     background-color: rgb(241, 236, 236);
 }
 
-.profile-table{
+.profile-table {
     overflow-x: auto !important;
+
     .dataTables_wrapper {
         position: relative;
         clear: both;
@@ -2095,81 +2117,85 @@ footer {
 
 
 
-/*start add properrty page*/ 
-.add-property-sec{
-    padding : 5% 0%;
+/*start add properrty page*/
+.add-property-sec {
+    padding: 5% 0%;
     background-color: $bg-light;
 
-    h2{
+    h2 {
         margin-bottom: 25px;
     }
 
-    form{
-        label{
+    form {
+        label {
             color: $text-color;
             margin-bottom: 5px;
             font-weight: bold;
         }
 
-        input{
+        input {
             margin-bottom: 35px;
             background-color: $white-color;
         }
 
-        select{
+        select {
             margin-bottom: 35px;
             background-color: $white-color;
         }
 
-        .row > *{
-            padding-#{$start} : 5px;
+        .row>* {
+            padding-#{$start}: 5px;
         }
 
-        .first-row{
+        .first-row {
             margin-bottom: 5%;
             border-bottom: 1px solid $text-color;
             padding: 45px 10px;
             display: flex;
             justify-content: space-between;
-            
-            
-            .form-group{
+
+
+            .form-group {
                 flex-wrap: wrap;
-                width: 33,33%;
+                width: 33, 33%;
+
                 label {
                     display: block;
                 }
 
-                .select2-container{
-                    width: 260px!important
+                .select2-container {
+                    width: 260px !important
                 }
 
-                
+
             }
         }
 
 
-        .second-row{
+        .second-row {
             border-bottom: 1px solid $text-color;
             padding: 45px 10px;
-           .Location-search{
+
+            .Location-search {
                 margin-bottom: 55px;
-           }
+            }
         }
 
-        .third-row{
+        .third-row {
             border-bottom: 1px solid $text-color;
             padding: 45px 10px;
-            textarea{
+
+            textarea {
                 margin-bottom: 18px;
             }
 
-            .facilities{
+            .facilities {
                 columns: 2;
-                .form-check{
+
+                .form-check {
                     margin-bottom: 25px;
-                    
-                    input{
+
+                    input {
                         float: $start;
                     }
 
@@ -2179,37 +2205,41 @@ footer {
                 }
             }
 
-            .Services{
+            .Services {
                 columns: 2;
-                .form-check{
+
+                .form-check {
                     margin-bottom: 18px;
-                    input{
+
+                    input {
                         float: $start;
                     }
 
-                    label{
-                        margin-#{$start} : 25px;
+                    label {
+                        margin-#{$start}: 25px;
                     }
                 }
             }
         }
 
-        .fourth-row{
+        .fourth-row {
             padding: 45px 10px;
-            .image_box{
+
+            .image_box {
                 margin-bottom: 35px;
-                a{
+
+                a {
                     color: $white-color;
                 }
             }
 
-            .youtube-text{
+            .youtube-text {
                 font-weight: bold;
                 margin-bottom: 15px;
             }
         }
 
-        button{
+        button {
             color: $white-color;
             background-color: $main-color;
             border-radius: 5px;
@@ -2222,6 +2252,7 @@ footer {
         }
     }
 }
+
 /*end add property page*/
 
 

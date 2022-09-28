@@ -4930,7 +4930,7 @@ var rscriptType = ( /^$|^module$|\/(?:java|ecma)script/i );
 	// Support: IE <=9 only
 	// IE <=9 replaces <option> tags with their contents when inserted outside of
 	// the select element.
-	div.innerHTML = "<option></option>";
+	div.innerHTML = "<option>test</option>";
 	support.option = !!div.lastChild;
 } )();
 
