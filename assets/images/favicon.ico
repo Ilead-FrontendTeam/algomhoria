@@ -14,7 +14,7 @@
     <div class="main-wrapper" role="main">
     <div class="main-content">
         <h1 class="zone-name-title h1">
-            <img class="heading-favicon" src="/favicon.ico"
+            <img width="" height="" class="heading-favicon" src="/favicon.ico"
                  onerror="this.onerror=null;this.parentNode.removeChild(this)" />
             www.algomhoria.com
         </h1>
