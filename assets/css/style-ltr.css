@@ -270,7 +270,8 @@ iframe {
   box-shadow: none !important;
 }
 
-.slick-prev::before, .slick-next::before {
+.slick-prev::before,
+.slick-next::before {
   color: #e9e0e0 !important;
   font-size: 25px;
 }
@@ -1112,26 +1113,26 @@ footer .rights a {
 .single-project .single-project-details .single-item {
   background-color: #fff;
   border-radius: 5px;
-  padding: 25px 0px;
+  padding: 25px 0px 10px 0px;
   margin-bottom: 25px;
 }
 .single-project .single-project-details .single-item h2 {
   font-weight: 500;
   color: #3a464e;
-  padding: 0px 20px;
+  padding: 0px 10px;
   margin-bottom: 25px;
 }
 .single-project .single-project-details .single-item p {
-  padding: 0px 21px;
+  padding: 0px 10px;
 }
 .single-project .single-project-details .single-item .single-item-locaion {
   display: flex;
   color: #3a464e;
   margin-bottom: 25px;
-  padding: 0px 21px;
+  padding: 0px 10px;
 }
 .single-project .single-project-details .single-item .single-item-locaion span {
-  margin-left: 10px;
+  margin: 0px 5px;
 }
 .single-project .single-project-details .single-item .gallary {
   direction: ltr !important;
@@ -1246,7 +1247,7 @@ footer .rights a {
   margin: 15px 0px;
 }
 .single-project .single-project-form form button {
-  width: 80%;
+  width: 95%;
   height: 38px;
   display: flex;
   justify-content: center;
@@ -1396,7 +1397,7 @@ footer .rights a {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   margin-top: -50px;
   margin-bottom: 15px;
 }
@@ -1707,6 +1708,350 @@ footer .rights a {
 }
 
 /*end add property page*/
+/*start unity details page*/
+.unity-details .single-unity-details {
+  background-color: #092531;
+  color: #ffffff;
+  height: 100px;
+  padding-top: 2%;
+  margin-bottom: 25px;
+}
+.unity-details .single-unity-details .unity-detail span {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.unity-details .single-unity-details .unity-detail h5 {
+  font-weight: 600;
+  font-size: 24px;
+}
+.unity-details .unity-tabs .nav-pills {
+  --bs-nav-pills-border-radius: 0px !important;
+}
+.unity-details .unity-tabs .nav-pills .nav-link {
+  color: #9bb3c7;
+  background-color: transparent !important;
+}
+.unity-details .unity-tabs .nav-pills .nav-link.active {
+  background-color: transparent !important;
+  border-bottom: 3px solid #092531;
+  color: #3a464e;
+}
+.unity-details .unity-tabs .tab-content > .active {
+  padding: 0px;
+}
+.unity-details .unity-tabs .tab-content iframe {
+  width: 100%;
+  min-height: 400px;
+}
+.unity-details .unity-Additional ul {
+  -moz-columns: 2;
+       columns: 2;
+}
+.unity-details .unity-Additional ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 0px 10px 5px;
+}
+.unity-details .unity-Additional ul li span {
+  color: #3a464e;
+  font-weight: 600;
+  font-size: 15px;
+}
+.unity-details .unity-Additional ul li .unity-det-title {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+.unity-details .unity-booking {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.unity-details .unity-booking h4 {
+  color: #3a464e;
+  font-weight: bold;
+  margin-bottom: 21px;
+}
+.unity-details .unity-booking .booking-check {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.unity-details .unity-booking .booking-check .form-group {
+  width: 48%;
+  margin-right: 2%;
+}
+.unity-details .unity-booking .booking-check .form-group label {
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #000;
+}
+.unity-details .unity-booking .total-booking-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  margin-top: 25px;
+}
+.unity-details .unity-booking .total-booking-price h5 {
+  font-weight: 500;
+  color: #3a464e;
+  font-size: 18px;
+}
+.unity-details .unity-booking .total-booking-price h6 {
+  font-weight: 500;
+  color: #3a464e;
+  font-size: 18px;
+}
+.unity-details .unity-booking .unity-booking-btn {
+  background-color: #092531;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 45px;
+  margin: 25px auto;
+}
+.unity-details .unity-booking-call {
+  background-color: #cb9b4d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 45px;
+  margin: 25px auto;
+}
+
+/*end unity details page*/
+/*start reset page*/
+.reset-section {
+  background-color: #e9ecec;
+  padding: 3% 0%;
+}
+.reset-section .reset-details {
+  width: 60%;
+  margin: 0px auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 25px 15px;
+}
+.reset-section .reset-details h1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #3a464e;
+}
+.reset-section .reset-details .form-group {
+  display: flex;
+  width: 100%;
+}
+.reset-section .reset-details .form-group label {
+  font-weight: 600;
+  color: #000;
+  margin: 5px 25px;
+  font-size: 18px;
+}
+.reset-section .reset-details .reset-btn {
+  background-color: #092531;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 25px auto;
+  min-width: 200px;
+  height: 45px;
+  padding: 15px 25px;
+}
+
+.reset-new .form-group {
+  margin-bottom: 15px;
+}
+.reset-new .form-group label {
+  font-weight: 600;
+  color: #000;
+  margin: 5;
+  font-size: 16px !important;
+  width: 35%;
+}
+
+/*end reset page*/
+/*start my account fixed*/
+.my-account-form-fixed {
+  margin: 35px 0px;
+}
+.my-account-form-fixed .my-acc-det-fixed {
+  width: 100%;
+  margin-bottom: 35px;
+}
+.my-account-form-fixed .my-acc-det-fixed h4 {
+  color: #3a464e;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.my-account-form-fixed .my-acc-det-fixed div {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  height: 45px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #3a464e;
+}
+
+/*end my account fixed*/
+/*start profile users page*/
+.table-btn {
+  width: 70px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-btn span {
+  margin-right: 3px;
+}
+
+.add-client {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 35px;
+}
+.add-client a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #092531;
+  color: #ffffff;
+  width: 125px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+/*end profile users page*/
+/*start team users page*/
+.team-users {
+  padding: 3% 0%;
+  background-color: #f7f8f8;
+}
+.team-users .standard-card p {
+  color: #3a464e;
+  font-weight: bold;
+}
+
+/*end team users page*/
+/*start error page*/
+.error-title {
+  font-size: 35px !important;
+  margin-bottom: 35px !important;
+}
+
+.error-back {
+  background-color: #092531;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  height: 45px;
+  padding: 15px 25px;
+}
+.error-back:hover {
+  color: #ffffff;
+}
+
+/*end error page*/
+/*start renting process page*/
+.renting-process {
+  padding: 6% 0%;
+}
+.renting-process h1 {
+  font-weight: 500;
+  color: #3a464e;
+}
+.renting-process .rent-tabs {
+  width: 80%;
+  margin: 5% auto;
+}
+.renting-process .rent-tabs .nav-pills {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 25px !important;
+}
+.renting-process .rent-tabs .nav-pills .nav-item {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+.renting-process .rent-tabs .nav-pills .nav-item .nav-link {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.renting-process .rent-tabs .nav-pills .nav-item .nav-link.active {
+  background-color: #092531;
+  color: #ffffff;
+}
+.renting-process .rent-tabs .tab-content h3 {
+  margin: 5% auto;
+  font-weight: 500;
+  font-size: 31px;
+}
+.renting-process .rent-tabs .tab-content label {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.renting-process .rent-tabs .tab-content select {
+  margin-bottom: 45px;
+}
+.renting-process .rent-tabs .tab-content .rent-information {
+  margin-bottom: 45px;
+}
+.renting-process .rent-tabs .tab-content .rent-information input {
+  margin-bottom: 35px;
+}
+.renting-process .rent-tabs .tab-content .rent-form-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.renting-process .rent-tabs .tab-content .rent-form-btn button {
+  background-color: #092531;
+  color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  margin: 45px 0px;
+}
+.renting-process .rent-tabs .tab-content .rent-details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 10px;
+}
+
+/*end renting process page*/
 @media (max-width: 767px) {
   /*start index page*/
   /*start header section*/
@@ -1856,6 +2201,40 @@ footer .rights a {
          columns: 1;
   }
   /*end single project page*/
+  /*start unity details page*/
+  .unity-details .single-unity-details {
+    padding-top: 3%;
+  }
+  .unity-details .single-unity-details .unity-detail h5 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .unity-details .unity-Additional ul {
+    -moz-columns: 1;
+         columns: 1;
+  }
+  /*end unity details page*/
+  /*start reset page*/
+  .reset-section .reset-details {
+    width: 100%;
+  }
+  .reset-section .reset-details .form-group label {
+    font-weight: 600;
+    color: #000;
+    margin: 5px 10px;
+    font-size: 18px;
+  }
+  .reset-new .form-group {
+    flex-wrap: wrap;
+  }
+  .reset-new .form-group label {
+    font-weight: 600;
+    color: #000;
+    font-size: 16px !important;
+    width: 100%;
+    margin-bottom: 0px 0px 10px 0px !important;
+  }
+  /*end reset page*/
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /*start header section*/

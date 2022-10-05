@@ -86,6 +86,28 @@ $('.slider-nav').slick({
   centerMode: true,
   focusOnSelect: true,
 	infinite: true,
+	centerPadding: '0px',
+  arrows: false
+});
+
+
+
+$('.slider-for2').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav',
+	autoplay: true
+});
+$('.slider-nav2').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+	infinite: true,
 	centerPadding: '0px'
 });
 		
@@ -100,6 +122,7 @@ $(function() {
     $('#datepicker2').datepicker();
     $('#datepicker3').datepicker();
     $('#datepicker4').datepicker();
+    $('#datepicker5').datepicker();
 });
 
 $('#example').dataTable();
@@ -108,6 +131,7 @@ $('#example2').DataTable();
 $('#example3').DataTable();
 $('#example4').DataTable();
 $('#example5').DataTable();
+
 
 
 
@@ -124,4 +148,48 @@ $(".payment-method-card").click(function(){
   $(this).parent().siblings().children().hasClass("selected") && $(this).parent().siblings().children().removeClass("selected")
 
 });
+
+
+$('.plus').click(function() {
+  $('.table-bordered tbody').append('<tr class="child"><td>blahblah</td></tr>');
+});
+
+
+function showin(divin, element)
+{
+  console.log("element",element)
+    document.getElementById(divin).style.display = element.value == 3 ? 'block' : 'none';
+}
+
+
+
+
+$('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+  var $target = $(e.target);
+
+  if ($target.parent().hasClass('disabled')) {
+    return false;
+  }
+});
+
+$(".next-step").click(function (e) {
+
+  var $active = $('.rent-tabs .nav-pills li.active');
+  $active.next().removeClass('disabled');
+  nextTab($active);
+
+});
+
+
+
+function nextTab(elem) {
+  $(elem).next().find('a[data-toggle="tab"]').click();
+}
+
+function prevTab(elem) {
+  $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+
+
 

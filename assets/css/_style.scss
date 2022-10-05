@@ -322,7 +322,8 @@ iframe {
     box-shadow: none !important;
 }
 
-.slick-prev::before, .slick-next::before{
+.slick-prev::before,
+.slick-next::before {
     color: #e9e0e0 !important;
     font-size: 25px;
     // box-shadow: 0 10px 10px rgba(0, 0, 0, .15);
@@ -1470,28 +1471,28 @@ footer {
         .single-item {
             background-color: #fff;
             border-radius: 5px;
-            padding: 25px 0px;
+            padding: 25px 0px 10px 0px;
             margin-bottom: 25px;
 
             h2 {
                 font-weight: 500;
                 color: $text-color;
-                padding: 0px 20px;
+                padding: 0px 10px;
                 margin-bottom: 25px;
             }
 
             p {
-                padding: 0px 21px;
+                padding: 0px 10px;
             }
 
             .single-item-locaion {
                 display: flex;
                 color: $text-color;
                 margin-bottom: 25px;
-                padding: 0px 21px;
+                padding: 0px 10px;
 
                 span {
-                    margin-#{$start}: 10px;
+                    margin: 0px 5px;
                 }
             }
 
@@ -1641,7 +1642,7 @@ footer {
             }
 
             button {
-                width: 80%;
+                width: 95%;
                 height: 38px;
                 display: flex;
                 justify-content: center;
@@ -1839,7 +1840,7 @@ footer {
                 width: 90px;
                 height: 90px;
                 border-radius: 50%;
-                border: 5px solid rgba(255, 255, 255, .4);
+                border: 1px solid rgba(255, 255, 255, .4);
                 margin-top: -50px;
                 margin-bottom: 15px;
 
@@ -2256,6 +2257,475 @@ footer {
 /*end add property page*/
 
 
+
+/*start unity details page*/
+.unity-details {
+    .single-unity-details {
+        background-color: $btn-bg;
+        color: $white-color;
+        height: 100px;
+        padding-top: 2%;
+        margin-bottom: 25px;
+
+        .unity-detail {
+            span {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            h5 {
+                font-weight: 600;
+                font-size: 24px;
+            }
+        }
+
+    }
+
+    .unity-tabs {
+        .nav-pills {
+            --bs-nav-pills-border-radius: 0px !important;
+
+            .nav-link {
+                color: #9bb3c7;
+                background-color: transparent !important;
+            }
+
+            .nav-link.active {
+                background-color: transparent !important;
+                border-bottom: 3px solid $main-color;
+                color: $text-color
+            }
+
+
+        }
+
+        .tab-content>.active {
+            padding: 0px;
+
+        }
+
+        .tab-content {
+            iframe {
+                width: 100%;
+                min-height: 400px;
+            }
+        }
+
+    }
+
+
+    .unity-Additional {
+        ul {
+            columns: 2;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                margin-#{$end}: 10px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 5px 0px 10px 5px;
+
+                span {
+                    color: $text-color;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+
+                .unity-det-title {
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.6)
+                }
+            }
+        }
+    }
+
+    .unity-booking {
+        background-color: $white-color;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 15px;
+
+        h4 {
+            color: $text-color;
+            font-weight: bold;
+            margin-bottom: 21px;
+        }
+
+        .booking-check {
+            display: flex;
+            flex-wrap: nowrap;
+
+            .form-group {
+                width: 48%;
+                margin-#{$end}: 2%;
+
+                label {
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    color: #000;
+                }
+            }
+        }
+
+        .total-booking-price {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 10px;
+            margin-top: 25px;
+
+
+            h5 {
+                font-weight: 500;
+                color: $text-color;
+                font-size: 18px;
+            }
+
+            h6 {
+                font-weight: 500;
+                color: $text-color;
+                font-size: 18px;
+            }
+        }
+
+        .unity-booking-btn {
+            background-color: $btn-bg;
+            color: $white-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            width: 95%;
+            height: 45px;
+            margin: 25px auto;
+        }
+
+    }
+
+    .unity-booking-call {
+        background-color: $sub-color;
+        color: $white-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        width: 95%;
+        height: 45px;
+        margin: 25px auto;
+    }
+}
+
+/*end unity details page*/
+
+
+
+/*start reset page*/
+
+.reset-section {
+    background-color: $bg-heavy;
+    padding: 3% 0%;
+
+    .reset-details {
+        h1 {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: $text-color;
+        }
+
+        width: 60%;
+        margin: 0px auto;
+        background-color: $white-color;
+        border-radius: 5px;
+        padding: 25px 15px;
+
+        .form-group {
+            display: flex;
+            width: 100%;
+
+            label {
+                font-weight: 600;
+                color: #000;
+                margin: 5px 25px;
+                font-size: 18px;
+            }
+
+        }
+
+        .reset-btn {
+            background-color: $btn-bg;
+            color: $white-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin: 25px auto;
+            min-width: 200px;
+            height: 45px;
+            padding: 15px 25px;
+        }
+
+    }
+
+
+
+}
+
+.reset-new {
+    .form-group {
+        margin-bottom: 15px;
+
+        label {
+            font-weight: 600;
+            color: #000;
+            margin: 5;
+            font-size: 16px !important;
+            width: 35%;
+        }
+
+    }
+
+}
+
+/*end reset page*/
+
+
+/*start my account fixed*/
+.my-account-form-fixed {
+    margin: 35px 0px;
+
+    .my-acc-det-fixed {
+        width: 100%;
+        margin-bottom: 35px;
+
+        h4 {
+            color: $text-color;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        div {
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .1);
+            padding: 10px;
+            border-radius: 5px;
+            height: 45px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, .1);
+            font-size: 16px;
+            color: $text-color;
+
+        }
+    }
+
+}
+
+/*end my account fixed*/
+
+
+/*start profile users page*/
+.table-btn {
+    width: 70px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        margin-#{$end}: 3px;
+    }
+
+}
+
+.add-client {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 35px;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $btn-bg;
+        color: $white-color;
+        width: 125px;
+        height: 45px;
+        border-radius: 5px;
+    }
+
+}
+
+
+/*end profile users page*/
+
+
+/*start team users page*/
+.team-users {
+    padding: 3% 0%;
+    background-color: $bg-light;
+
+    .standard-card {
+        p {
+            color: $text-color;
+            font-weight: bold;
+        }
+
+    }
+}
+
+/*end team users page*/
+
+
+/*start error page*/
+.error-title {
+    font-size: 35px !important;
+    margin-bottom: 35px !important;
+}
+
+.error-back {
+    background-color: $main-color;
+    color: $white-color;
+    border-radius: 5px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    height: 45px;
+    padding: 15px 25px;
+
+    &:hover {
+        color: $white-color;
+    }
+}
+
+/*end error page*/
+
+
+
+
+
+
+
+
+
+
+/*start renting process page*/
+.renting-process {
+    padding: 6% 0%;
+
+    h1 {
+        font-weight: 500;
+        color: $text-color;
+    }
+
+    .rent-tabs {
+        width: 80%;
+        margin: 5% auto;
+
+        .nav-pills {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 25px !important;
+
+            .nav-item {
+
+                width: 33.33%;
+                display: flex;
+                justify-content: center;
+
+                .nav-link {
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 50%;
+                    width: 65px;
+                    height: 65px;
+                    color: rgba(0, 0, 0, .3);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+
+                }
+
+                .nav-link.active {
+                    background-color: $main-color;
+                    color: $white-color;
+
+                    // &::after {
+                    //     content: " ";
+                    //     position: absolute;
+                    //     left: 46%;
+                    //     opacity: 1;
+                    //     margin: 0 auto;
+                    //     bottom: 0px;
+                    //     border: 10px solid transparent;
+                    //     border-bottom-color: transparent;
+                    //     border-bottom-color: #5bc0de;
+                    // }
+
+                }
+            }
+        }
+
+        .tab-content {
+            h3 {
+                margin: 5% auto;
+                font-weight: 500;
+                font-size: 31px;
+            }
+
+            label {
+                color: rgba(0, 0, 0, .8);
+                font-size: 22px;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+
+            select {
+                margin-bottom: 45px;
+            }
+
+            .rent-information {
+                margin-bottom: 45px;
+
+                input {
+                    margin-bottom: 35px;
+                }
+            }
+
+            .rent-form-btn {
+                display: flex;
+                justify-content: flex-end;
+
+                button {
+                    background-color: $btn-bg;
+                    color: $white-color;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 150px;
+                    height: 45px;
+                    margin: 45px 0px;
+                }
+            }
+
+            .rent-details {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(0, 0, 0, .3);
+                padding-bottom: 10px;
+            }
+
+
+        }
+    }
+
+}
+
+/*end renting process page*/
 
 
 
