@@ -2180,6 +2180,19 @@ footer {
             .Location-search {
                 margin-bottom: 55px;
             }
+            
+            .appionment-details {
+               
+                #rent-price {
+                    display: none;
+                }
+            }
+            .book-item {
+                display: none;
+            }
+            #price-list-content input {
+                margin-bottom: 0;
+            }
         }
 
         .third-row {
@@ -2240,7 +2253,7 @@ footer {
             }
         }
 
-        button {
+        button[type="submit"] {
             color: $white-color;
             background-color: $main-color;
             border-radius: 5px;

@@ -232,40 +232,28 @@
                     <h2 class="text-center">Governorate</h2>
 
 
-                    <div class="first-row">
+                    <div class="first-row row">
 
-                        <div class="form-group">
+                        <div class="form-group col-md-4 col-12">
                             <label>Governorate</label>
-                            <select class="js-example-placeholder-single js-states form-control">
-                                <option>test</option>
-                                <option>2</option>
-                                <option>4</option>
-                                <option>3</option>
-                                <option>5</option>
+                            <select class="form-select" aria-label="Default select example" id="governorate" name="governorate">
+                                <option selected disabled>Governorate</option>
                             </select>
 
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group col-md-4 col-12">
                             <label>Area</label>
-                            <select class="js-example-placeholder-single js-states form-control">
-                                <option>test</option>
-                                <option>2</option>
-                                <option>4</option>
-                                <option>3</option>
-                                <option>5</option>
+                            <select class="form-select" aria-label="Default select example" id="area" name='area'>
+                            <option selected disabled>Area</option>
                             </select>
                         </div>
 
 
-                        <div class="form-group">
+                        <div class="form-group col-md-4 col-12">
                             <label>Street</label>
-                            <select class="js-example-placeholder-single js-states form-control">
-                                <option>test</option>
-                                <option>2</option>
-                                <option>4</option>
-                                <option>3</option>
-                                <option>5</option>
+                            <select class="form-select" aria-label="Default select example" id="street" name="street">
+                                <option selected disabled>Street</option>
                             </select>
                         </div>
 
@@ -283,7 +271,7 @@
                                         <div class="col-md-4 col-12">
                                             <div class="form-group">
                                                 <label>Section</label>
-                                                <select class="form-control" onchange="showin(e)">
+                                                <select class="form-select" aria-label="Default select example" onchange="showin(this)">
                                                     <option value="0">choose</option>
                                                     <option value="1">for sale</option>
                                                     <option value="2">for rent</option>
@@ -298,7 +286,7 @@
                                         <div class="col-md-4 col-12">
                                             <div class="form-group">
                                                 <label>Property type </label>
-                                                <select class="form-control">
+                                                <select class="form-select" aria-label="Default select example">
                                                     <option value="" disabled>choose</option>
                                                     <option>hotels</option>
                                                     <option>hotel</option>
@@ -308,18 +296,18 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-4 col-12 rent-sell">
+                                        <div class="col-md-4 col-12 rent-sell  book-item">
                                             <div class="form-group">
                                                 <label>minimum selected nigths</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" value="1">
 
                                             </div>
                                         </div>
 
-                                        <div class="col-md-4 col-12 rent-sell">
+                                        <div class="col-md-4 col-12 rent-sell  book-item">
                                             <div class="form-group">
                                                 <label>Stock</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" value="1">
 
                                             </div>
                                         </div>
@@ -332,7 +320,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-4 col-12 rent-only"  id="divin">
+                                        <div class="col-md-4 col-12 rent-only"  id="rent-price">
                                             <div class="form-group">
                                                 <label>Rent Price</label>
                                                 <input type="text" class="form-control">
@@ -343,7 +331,7 @@
                                         <div class="col-md-4 col-12">
                                             <div class="form-group">
                                                 <label> Payment method </label>
-                                                <select class="form-control">
+                                                <select class="form-select" aria-label="Default select example">
                                                     <option value="" disabled>choose</option>
                                                     <option>hotels</option>
                                                     <option>hotel</option>
@@ -361,7 +349,7 @@
 
                                         <div class="col-md-4 col-12">
                                             <div class="form-group">
-                                                <label>baths</label>
+                                                <label>Baths</label>
                                                 <input type="text" class="form-control">
                                             </div>
                                         </div>
@@ -369,7 +357,7 @@
 
                                         <div class="col-md-4 col-12">
                                             <div class="form-group">
-                                                <label>Floor No</label>
+                                                <label>Floor no</label>
                                                 <input type="text" class="form-control">
                                             </div>
                                         </div>
@@ -377,24 +365,24 @@
                                         <div class="col-md-4 col-12">
                                             <div class="form-group">
                                                 <label>View type</label>
-                                                <select class="form-control">
-                                                    <option>test</option>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option>choose</option>
                                                 </select>
                                             </div>
                                         </div>
 
                                         <div class="col-md-4 col-12">
                                             <div class="form-group">
-                                                <label>Finishing type </label>
-                                                <select class="form-control">
-                                                    <option>test</option>
+                                                <label>Finishing type</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option>choose</option>
                                                 </select>
                                             </div>
                                         </div>
 
                                         <div class="col-md-4 col-12">
                                             <div class="form-group">
-                                                <label>phone No</label>
+                                                <label>Phone number</label>
                                                 <input type="phone" class="form-control">
                                             </div>
                                         </div>
@@ -410,7 +398,7 @@
 
                             <div class="col-md-5 col-12">
                                 <h2 class="text-center Location-search">Location</h2>
-                                <input type="text" class="form-control" />
+                                <input type="text" class="form-control" placeholder="Enter Location"/>
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1727.2028081445055!2d31.482644746206294!3d30.02521907240463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145822f178d5a445%3A0x367e3f4e23eaf846!2sConcord%20Plaza%20Mall!5e0!3m2!1sen!2sus!4v1663852945650!5m2!1sen!2sus"
                                     height="350" style="border:0;" allowfullscreen="" loading="lazy"
@@ -419,98 +407,101 @@
                             </div>
 
                         </div>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <p>You can use this section to set specific dates with special prices</p>
-                            </div>
-
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">From</th>
-                                        <th scope="col">To</th>
-                                        <th scope="col">Monday</th>
-                                        <th scope="col">Tuesday</th>
-                                        <th scope="col">Wednesday</th>
-                                        <th scope="col">Thurday</th>
-                                        <th scope="col">Friday</th>
-                                        <th scope="col">saturday</th>
-                                        <th scope="col">sunday</th>
-                                        <th scope="col"></th>
-
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    <tr>
-                                        <td class="cel1">
-
-                                            <div class="input-group date" id="datepicker">
-                                                <input type="text" class="form-control">
-                                                <span class="input-group-append">
-                                                    <!-- <span class="input-group-text bg-light d-block">
+                        <div id="price-list-content" class="book-item" >
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>You can use this section to set specific dates with special prices</p>
+                                </div>
+    
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">From</th>
+                                            <th scope="col">To</th>
+                                            <th scope="col">Monday</th>
+                                            <th scope="col">Tuesday</th>
+                                            <th scope="col">Wednesday</th>
+                                            <th scope="col">Thurday</th>
+                                            <th scope="col">Friday</th>
+                                            <th scope="col">saturday</th>
+                                            <th scope="col">sunday</th>
+                                            <th scope="col"></th>
+    
+                                        </tr>
+                                    </thead>
+    
+                                    <tbody>
+                                        <tr class="renting-price-row">
+                                            <td class="cel1">
+    
+                                                <div class="input-group date datepicker">
+                                                    <input type="text" class="form-control">
+                                                    <span class="input-group-append">
+                                                        <!-- <span class="input-group-text bg-light d-block">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </span> -->
+                                                    </span>
+                                                </div>
+    
+    
+                                            </td>
+    
+                                            <td  class="cel2">
+    
+                                                <div class="input-group date datepicker" >
+                                                    <input type="text" class="form-control">
+                                                    <span class="input-group-append">
+                                                        <!-- <span class="input-group-text bg-light d-block">
                                                         <i class="fa fa-calendar"></i>
                                                     </span> -->
-                                                </span>
-                                            </div>
-
-
-                                        </td>
-
-                                        <td  class="cel2">
-
-                                            <div class="input-group date" id="datepicker2">
-                                                <input type="text" class="form-control">
-                                                <span class="input-group-append">
-                                                    <!-- <span class="input-group-text bg-light d-block">
-                                                    <i class="fa fa-calendar"></i>
-                                                </span> -->
-                                                </span>
-                                            </div>
-
-
-                                        </td>
-
-                                        <td>
-                                            <input type="text" class="form-control">
-                                        </td>
-
-                                        <td>
-                                            <input type="text" class="form-control">
-                                        </td>
-
-                                        <td>
-                                            <input type="text" class="form-control">
-                                        </td>
-
-
-                                        <td>
-                                            <input type="text" class="form-control">
-                                        </td>
-
-                                        <td>
-                                            <input type="text" class="form-control">
-                                        </td>
-
-                                        <td>
-                                            <input type="text" class="form-control">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control">
-                                        </td>
-
-                                        <td>
-                                            <button class="btn plus" >+</button>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-
-                            </table>
-
-
+                                                    </span>
+                                                </div>
+    
+    
+                                            </td>
+    
+                                            <td>
+                                                <input type="text" class="form-control" value="0" placeholder="Price">
+                                            </td>
+    
+                                            <td>
+                                                <input type="text" class="form-control" value="0" placeholder="Price">
+                                            </td>
+    
+                                            <td>
+                                                <input type="text" class="form-control" value="0" placeholder="Price">
+                                            </td>
+    
+    
+                                            <td>
+                                                <input type="text" class="form-control" value="0" placeholder="Price">
+                                            </td>
+    
+                                            <td>
+                                                <input type="text" class="form-control" value="0" placeholder="Price">
+                                            </td>
+    
+                                            <td>
+                                                <input type="text" class="form-control" value="0" placeholder="Price">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" value="0" placeholder="Price">
+                                            </td>
+    
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-xs plus" onclick="repeate()" >+</button>
+                                            </td>
+                                        </tr>
+    
+                                    </tbody>
+    
+                                </table>
+    
+    
+                            </div>
                         </div>
+
+                      
                     </div>
 
 

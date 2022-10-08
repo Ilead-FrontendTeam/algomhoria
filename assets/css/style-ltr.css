@@ -1652,6 +1652,15 @@ footer .rights a {
 .add-property-sec form .second-row .Location-search {
   margin-bottom: 55px;
 }
+.add-property-sec form .second-row .appionment-details #rent-price {
+  display: none;
+}
+.add-property-sec form .second-row .book-item {
+  display: none;
+}
+.add-property-sec form .second-row #price-list-content input {
+  margin-bottom: 0;
+}
 .add-property-sec form .third-row {
   border-bottom: 1px solid #3a464e;
   padding: 45px 10px;
@@ -1695,7 +1704,7 @@ footer .rights a {
   font-weight: bold;
   margin-bottom: 15px;
 }
-.add-property-sec form button {
+.add-property-sec form button[type=submit] {
   color: #ffffff;
   background-color: #092531;
   border-radius: 5px;
