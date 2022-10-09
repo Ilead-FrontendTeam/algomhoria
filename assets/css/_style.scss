@@ -2329,37 +2329,37 @@ footer {
 
     }
 
-    .unity-tabs {
-        .nav-pills {
-            --bs-nav-pills-border-radius: 0px !important;
+    // .unity-tabs {
+    //     .nav-pills {
+    //         --bs-nav-pills-border-radius: 0px !important;
 
-            .nav-link {
-                color: #9bb3c7;
-                background-color: transparent !important;
-            }
+    //         .nav-link {
+    //             color: #9bb3c7;
+    //             background-color: transparent !important;
+    //         }
 
-            .nav-link.active {
-                background-color: transparent !important;
-                border-bottom: 3px solid $main-color;
-                color: $text-color
-            }
+    //         .nav-link.active {
+    //             background-color: transparent !important;
+    //             border-bottom: 3px solid $main-color;
+    //             color: $text-color
+    //         }
 
 
-        }
+    //     }
 
-        .tab-content>.active {
-            padding: 0px;
+    //     .tab-content>.active {
+    //         padding: 0px;
 
-        }
+    //     }
 
-        .tab-content {
-            iframe {
-                width: 100%;
-                min-height: 400px;
-            }
-        }
+    //     .tab-content {
+    //         iframe {
+    //             width: 100%;
+    //             min-height: 400px;
+    //         }
+    //     }
 
-    }
+    // }
 
 
     .unity-Additional {
@@ -2462,6 +2462,38 @@ footer {
         height: 45px;
         margin: 25px auto;
     }
+}
+
+.unity-tabs {
+    .nav-pills {
+        --bs-nav-pills-border-radius: 0px !important;
+
+        .nav-link {
+            color: #9bb3c7;
+            background-color: transparent !important;
+        }
+
+        .nav-link.active {
+            background-color: transparent !important;
+            border-bottom: 3px solid $main-color;
+            color: $text-color
+        }
+
+
+    }
+
+    .tab-content>.active {
+        padding: 0px;
+
+    }
+
+    .tab-content {
+        iframe {
+            width: 100%;
+            min-height: 400px;
+        }
+    }
+
 }
 
 /*end unity details page*/
