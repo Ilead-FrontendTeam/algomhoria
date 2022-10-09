@@ -235,18 +235,19 @@ addDatePicker()
 }
 function minus(event) {
   event.parentElement.parentElement.remove();
-  console.log(event)
+  // console.log(event)
 }
 // $('.plus').click(function() {
 //   $('.table-bordered tbody').append('<tr class="child"><td>blahblah</td></tr>');
 // });
 
-
+// Property On change
 function showin(e)
 {
   if(e.value == 3) {
      document.getElementById("rent-price").style.display = "block";
      const elem = document.getElementsByClassName("book-item");
+     console.log("elem",elem)
 
      for (let e  of elem) {
        e.style.display = "none"
@@ -269,6 +270,17 @@ function showin(e)
   }
 }
 
+// Payment cash visa onchange
+
+
+function showhide(e)
+{
+  if(e.value == 1) {
+     document.getElementById("billing-info").style.display = "block";
+  }  else {
+    document.getElementById("billing-info").style.display = "none";
+  }
+}
 
 
 
@@ -338,3 +350,33 @@ $('#area').on('change', function() {
 });
 
 
+
+// Paymnt Tabs 
+$(document).ready(function () {
+	//Enable Tooltips
+	var tooltipTriggerList = [].slice.call(
+		document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	);
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl);
+	});
+
+	//Advance Tabs
+	$(".next").click(function () {
+		const nextTabLinkEl = $(".nav-tabs .active")
+			.closest("li")
+			.next("li")
+			.find("a")[0];
+		const nextTab = new bootstrap.Tab(nextTabLinkEl);
+		nextTab.show();
+	});
+
+	$(".previous").click(function () {
+		const prevTabLinkEl = $(".nav-tabs .active")
+			.closest("li")
+			.prev("li")
+			.find("a")[0];
+		const prevTab = new bootstrap.Tab(prevTabLinkEl);
+		prevTab.show();
+	});
+});
