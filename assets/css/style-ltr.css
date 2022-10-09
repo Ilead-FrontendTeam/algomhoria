@@ -1737,6 +1737,9 @@ footer .rights a {
   width: 25px;
   height: 25px;
   margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .add-property-sec .plus:hover {
   background-color: #092531;
@@ -2144,6 +2147,10 @@ input[type=file] {
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .rent-condition {
@@ -2512,7 +2519,7 @@ input[type=file] {
   }
   /*end intro section*/
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .intro {
     height: 650px;
   }
