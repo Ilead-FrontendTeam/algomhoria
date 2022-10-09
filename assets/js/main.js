@@ -116,8 +116,17 @@ $('.project-sub-slider').slick({
   autoplay: true
 });
 
-
+function addDatePicker(){
+  $(".datepicker").datepicker({
+    showOn: "button",
+    buttonImage: "/calendar.png",
+    buttonImageOnly: true,
+    changeMonth: true,
+    changeYear: true
+  });
+}
 $(function() {
+    $('.datepicker').datepicker();
     $('#datepicker').datepicker();
     $('#datepicker2').datepicker();
     $('#datepicker3').datepicker();
@@ -149,18 +158,130 @@ $(".payment-method-card").click(function(){
 
 });
 
+// Repeate Html 
+function repeate() {
+//   const node = document.querySelector(".renting-price-row");
+//   console.log(node)
+// const clone = node.cloneNode(true);
 
-$('.plus').click(function() {
-  $('.table-bordered tbody').append('<tr class="child"><td>blahblah</td></tr>');
-});
+// document.querySelector("#price-list-content tbody").appendChild(clone);
+// console.log(repeatedItem)
+//   alert("sfkjksdjk")
+
+const sec = document.querySelector("#price-list-content tbody");
+sec.insertAdjacentHTML('beforeend', `
+<tr class="renting-price-row">
+<td class="cel1">
+
+    <div class="input-group date datepicker">
+        <input type="text" class="form-control">
+        <span class="input-group-append">
+            <!-- <span class="input-group-text bg-light d-block">
+                <i class="fa fa-calendar"></i>
+            </span> -->
+        </span>
+    </div>
 
 
-function showin(divin, element)
+</td>
+
+<td  class="cel2">
+
+    <div class="input-group date datepicker" >
+        <input type="text" class="form-control">
+        <span class="input-group-append">
+            <!-- <span class="input-group-text bg-light d-block">
+            <i class="fa fa-calendar"></i>
+        </span> -->
+        </span>
+    </div>
+
+
+</td>
+
+<td>
+    <input type="text" class="form-control" value="0" placeholder="Price">
+</td>
+
+<td>
+    <input type="text" class="form-control" value="0" placeholder="Price">
+</td>
+
+<td>
+    <input type="text" class="form-control" value="0" placeholder="Price">
+</td>
+
+
+<td>
+    <input type="text" class="form-control" value="0" placeholder="Price">
+</td>
+
+<td>
+    <input type="text" class="form-control" value="0" placeholder="Price">
+</td>
+
+<td>
+    <input type="text" class="form-control" value="0" placeholder="Price">
+</td>
+<td>
+    <input type="text" class="form-control" value="0" placeholder="Price">
+</td>
+
+<td>
+    <button type="button" class="btn btn-danger btn-xs minus" onclick="minus(this)" >-</button>
+</td>
+</tr>
+`)
+addDatePicker()
+}
+function minus(event) {
+  event.parentElement.parentElement.remove();
+  // console.log(event)
+}
+// $('.plus').click(function() {
+//   $('.table-bordered tbody').append('<tr class="child"><td>blahblah</td></tr>');
+// });
+
+// Property On change
+function showin(e)
 {
-  console.log("element",element)
-    document.getElementById(divin).style.display = element.value == 3 ? 'block' : 'none';
+  if(e.value == 3) {
+     document.getElementById("rent-price").style.display = "block";
+     const elem = document.getElementsByClassName("book-item");
+     console.log("elem",elem)
+
+     for (let e  of elem) {
+       e.style.display = "none"
+     }
+  } 
+  else if(e.value == 4) {
+    const elem = document.getElementsByClassName("book-item");
+
+    for (let e  of elem) {
+      e.style.display = "block"
+    }
+    document.getElementById("rent-price").style.display = "none";
+  } else {
+    document.getElementById("rent-price").style.display = "none";
+    const elem = document.getElementsByClassName("book-item");
+
+    for (let e  of elem) {
+      e.style.display = "none"
+    }
+  }
 }
 
+// Payment cash visa onchange
+
+
+function showhide(e)
+{
+  if(e.value == 1) {
+     document.getElementById("billing-info").style.display = "block";
+  }  else {
+    document.getElementById("billing-info").style.display = "none";
+  }
+}
 
 
 
@@ -321,3 +442,70 @@ function removeImg(e) {
 function selectMain(e) {
   e.parentElement.parentElement.classList.add("myimg-featured");
 }
+// AJax Requests 
+
+  // 1- governorate area
+
+  $('#governorate').on('change', function() {
+    var governorate_id = this.value;
+    // console.log("governorate_id",governorate_id);
+    $.ajax({
+        url: 'ajax/area.php',
+        type: "POST",
+        data: {
+            governorate_data: governorate_id
+        },
+        success: function(result) {
+            $('#area').html(result);
+            // console.log("area",result);
+        }
+    })
+});
+// 2- area street
+$('#area').on('change', function() {
+    var area_id = this.value;
+    // console.log(governorate_id);
+    $.ajax({
+        url: 'ajax/street.php',
+        type: "POST",
+        data: {
+            area_data: area_id
+        },
+        success: function(data) {
+            $('#street').html(data);
+            // console.log(data);
+        }
+    })
+});
+
+
+
+// Paymnt Tabs 
+$(document).ready(function () {
+	//Enable Tooltips
+	var tooltipTriggerList = [].slice.call(
+		document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	);
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl);
+	});
+
+	//Advance Tabs
+	$(".next").click(function () {
+		const nextTabLinkEl = $(".nav-tabs .active")
+			.closest("li")
+			.next("li")
+			.find("a")[0];
+		const nextTab = new bootstrap.Tab(nextTabLinkEl);
+		nextTab.show();
+	});
+
+	$(".previous").click(function () {
+		const prevTabLinkEl = $(".nav-tabs .active")
+			.closest("li")
+			.prev("li")
+			.find("a")[0];
+		const prevTab = new bootstrap.Tab(prevTabLinkEl);
+		prevTab.show();
+	});
+});

@@ -42,7 +42,7 @@ a {
 }
 
 .myimg-featured {
-  border: 2px dashed #f4672f;
+  border: 2px dashed #F4672F;
   padding: 5px;
 }
 
@@ -289,7 +289,7 @@ iframe {
 
 .slick-prev::before,
 .slick-next::before {
-  color: #e9e0e0 !important;
+  color: #E9E0E0 !important;
   font-size: 25px;
 }
 
@@ -1670,6 +1670,15 @@ footer .rights a {
 .add-property-sec form .second-row .Location-search {
   margin-bottom: 55px;
 }
+.add-property-sec form .second-row .appionment-details #rent-price {
+  display: none;
+}
+.add-property-sec form .second-row .book-item {
+  display: none;
+}
+.add-property-sec form .second-row #price-list-content input {
+  margin-bottom: 0;
+}
 .add-property-sec form .third-row {
   border-bottom: 1px solid #3a464e;
   padding: 45px 10px;
@@ -1713,7 +1722,7 @@ footer .rights a {
   font-weight: bold;
   margin-bottom: 15px;
 }
-.add-property-sec form button {
+.add-property-sec form button[type=submit] {
   color: #ffffff;
   background-color: #092531;
   border-radius: 5px;
@@ -2059,6 +2068,9 @@ footer .rights a {
 .renting-process .rent-tabs .tab-content .rent-information input {
   margin-bottom: 35px;
 }
+.renting-process .rent-tabs .tab-content #billing-info {
+  display: none;
+}
 .renting-process .rent-tabs .tab-content .rent-form-btn {
   display: flex;
   justify-content: flex-end;
@@ -2165,6 +2177,74 @@ input[type=file] {
   justify-content: center;
   align-items: center;
   margin-bottom: 45px;
+}
+
+/*--rent tabs--*/
+.wizard,
+.wizard .nav-tabs,
+.wizard .nav-tabs .nav-item {
+  position: relative;
+}
+
+.wizard .nav-tabs:after {
+  content: "";
+  width: 80%;
+  border-bottom: solid 2px #ccc;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 38%;
+  z-index: -1;
+}
+
+.wizard .nav-tabs .nav-item .nav-link {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 6%;
+  background: white;
+  border: 2px solid #ccc;
+  color: #ccc;
+  z-index: 10;
+}
+
+.wizard .nav-tabs .nav-item .nav-link:hover {
+  color: #333;
+  border: 2px solid #333;
+}
+
+.wizard .nav-tabs .nav-item .nav-link.active {
+  background: #fff;
+  border: 2px solid #092531;
+  color: #092531;
+}
+
+.wizard .nav-tabs .nav-item .nav-link:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  margin: 0 auto;
+  bottom: 0px;
+  border: 5px solid transparent;
+  border-bottom-color: #092531;
+  transition: 0.1s ease-in-out;
+}
+
+.nav-tabs .nav-item .nav-link.active:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 1;
+  margin: 0 auto;
+  bottom: 0px;
+  border: 10px solid transparent;
+  border-bottom-color: #092531;
+}
+
+.wizard .nav-tabs .nav-item .nav-link svg {
+  font-size: 25px;
 }
 
 @media (max-width: 767px) {

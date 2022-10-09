@@ -51,10 +51,9 @@ a {
     color: red !important;
     background-color: transparent !important;
     font-size: 2rem;
-
 }
 .myimg-featured {
-    border: 2px dashed #f4672f;
+    border: 2px dashed #F4672F;
     padding: 5px;
 }
 .section-title {
@@ -339,7 +338,7 @@ iframe {
 
 .slick-prev::before,
 .slick-next::before {
-    color: #e9e0e0 !important;
+    color: #E9E0E0 !important;
     font-size: 25px;
     // box-shadow: 0 10px 10px rgba(0, 0, 0, .15);
 }
@@ -2196,6 +2195,19 @@ footer {
             .Location-search {
                 margin-bottom: 55px;
             }
+            
+            .appionment-details {
+               
+                #rent-price {
+                    display: none;
+                }
+            }
+            .book-item {
+                display: none;
+            }
+            #price-list-content input {
+                margin-bottom: 0;
+            }
         }
 
         .third-row {
@@ -2254,24 +2266,9 @@ footer {
                 font-weight: bold;
                 margin-bottom: 15px;
             }
-
-            // .ul-upload{
-            //     width: 100%;
-            //     display: flex;
-            //     flex-wrap: wrap;
-            //     li{
-            //         width: 150px;
-            //         height: 150px;
-            //         margin: 10px 0px;
-            //         img{
-            //             width: 150px;
-            //             height: 150px;                       
-            //         }
-            //     }
-            // }
         }
 
-        button {
+        button[type="submit"] {
             color: $white-color;
             background-color: $main-color;
             border-radius: 5px;
@@ -2293,7 +2290,6 @@ footer {
             color : #fff;
         }
     }
-
     table{
         td {
             input{
@@ -2702,6 +2698,18 @@ footer {
                     background-color: $main-color;
                     color: $white-color;
 
+                    // &::after {
+                    //     content: " ";
+                    //     position: absolute;
+                    //     left: 46%;
+                    //     opacity: 1;
+                    //     margin: 0 auto;
+                    //     bottom: 0px;
+                    //     border: 10px solid transparent;
+                    //     border-bottom-color: transparent;
+                    //     border-bottom-color: #5bc0de;
+                    // }
+
                 }
             }
         }
@@ -2730,6 +2738,9 @@ footer {
                 input {
                     margin-bottom: 35px;
                 }
+            }
+            #billing-info {
+                display: none;
             }
 
             .rent-form-btn {
@@ -2764,124 +2775,159 @@ footer {
 
 /*end renting process page*/
 
-
-
-
-
 // img{
 //     max-width:180px;
 // }
 input[type=file]{
-  padding:10px;
- 
+    padding:10px;
+  }
+  .full-upload{
+      width: 100%;
+      .upload-image{
+          width: 60%;
+          height: 45px;
+          position: relative;
+          cursor: pointer;
+          input{
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              cursor: pointer;
+          }
+      }
+      .bag{
+          width: 100%;
+          margin: 50px 0px;
+          ul{
+              display: flex;
+              flex-wrap: wrap;
+              li{
+                  margin: 10px;
+                  position: relative;
+                  height: 200px;
+                  div {
+                      height: 100%;
+                      img{
+                          width: 200px;
+                          height: 100%;
+                          border-radius: 5px;
+                      }
+                  }
+              }
+          }
+      }
+      .controls{
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(255,255,255,0.6);
+      }
+  }
+  .rent-condition{
+      background-color: $white-color;
+      width: 70%;
+      margin: 10% auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3% 0px;
+      .rent-sucess{
+          div{
+              border-radius: 50%;
+              border: 1px solid green;
+              color: green;
+              width: 80px;
+              height: 80px;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 45px;
+              display: flex;
+              font-size: 2rem;
+          }
+      }
+      .rent-faild{
+          border-radius: 50%;
+              border: 1px solid red;
+              color: red;
+              width: 80px;
+              height: 80px;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 45px;
+      }
+  }
+  
+    
+
+
+/*--rent tabs--*/
+
+.wizard,
+.wizard .nav-tabs,
+.wizard .nav-tabs .nav-item {
+	position: relative;
+}
+.wizard .nav-tabs:after {
+	content: "";
+	width: 80%;
+	border-bottom: solid 2px #ccc;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 38%;
+	z-index: -1;
+}
+.wizard .nav-tabs .nav-item .nav-link {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 6%;
+	background: white;
+	border: 2px solid #ccc;
+	color: #ccc;
+	z-index: 10;
+}
+.wizard .nav-tabs .nav-item .nav-link:hover {
+	color: #333;
+	border: 2px solid #333;
+}
+.wizard .nav-tabs .nav-item .nav-link.active {
+	background: #fff;
+	border: 2px solid #092531;
+	color: #092531;
+}
+.wizard .nav-tabs .nav-item .nav-link:after {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	opacity: 0;
+	margin: 0 auto;
+	bottom: 0px;
+	border: 5px solid transparent;
+	border-bottom-color: #092531;
+	transition: 0.1s ease-in-out;
 }
 
-
-
-
-
-
-.full-upload{
-    width: 100%;
-    .upload-image{
-        width: 60%;
-        height: 45px;
-        position: relative;
-        cursor: pointer;
-        input{
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            cursor: pointer;
-        }
-    }
-
-    .bag{
-        width: 100%;
-        margin: 50px 0px;
-       
-        ul{
-            display: flex;
-            flex-wrap: wrap;
-            li{
-                margin: 10px;
-                position: relative;
-                height: 200px;
-                div {
-                    height: 100%;
-                    img{
-                        width: 200px;
-                        height: 100%;
-                        border-radius: 5px;
-                    }
-                }
-               
-            }
-        }
-    }
-
-    .controls{
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(255,255,255,0.6);
-    }
+.nav-tabs .nav-item .nav-link.active:after {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	opacity: 1;
+	margin: 0 auto;
+	bottom: 0px;
+	border: 10px solid transparent;
+	border-bottom-color: #092531;
 }
-
-
-.rent-condition{
-    background-color: $white-color;
-    width: 70%;
-    margin: 10% auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3% 0px;
-    .rent-sucess{
-        div{
-            border-radius: 50%;
-            border: 1px solid green;
-            color: green;
-            width: 80px;
-            height: 80px;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 45px;
-            display: flex;
-            font-size: 2rem;
-        }
-    }
-
-    .rent-faild{
-        border-radius: 50%;
-            border: 1px solid red;
-            color: red;
-            width: 80px;
-            height: 80px;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 45px;
-
-    }
+.wizard .nav-tabs .nav-item .nav-link svg {
+	font-size: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
