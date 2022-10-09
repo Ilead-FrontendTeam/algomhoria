@@ -48,14 +48,14 @@
             <div class="header-details">
 
                 <a href="index.html" class="website-logo">
-                    <img src="assets/images/logo.webp" alt="logo" >
+                    <img src="assets/images/logo.webp" alt="logo">
                 </a>
 
                 <div class="header-info">
 
                     <div class="header-search">
                         <form>
-                            <input type="text" class="form-control" placeholder="Search By ID" >
+                            <input type="text" class="form-control" placeholder="Search By ID">
                             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
@@ -82,22 +82,21 @@
             <div class="mobile-header-details">
 
 
-                <button  data-bs-toggle="modal" data-bs-target="#mobile-nav">
+                <button data-bs-toggle="modal" data-bs-target="#mobile-nav">
                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </button>
                 <a href="tel:+201288818000"><span><i class="fa-solid fa-phone"></i></span></a>
                 <a href="mailto:info@algomhoria.com"><span><i class="fa-solid fa-envelope"></i></span></a>
 
                 <!-- Modal -->
-                <div class="modal fade" id="mobile-nav" tabindex="-1" aria-labelledby="mobile-nav"
-                    aria-hidden="true">
+                <div class="modal fade" id="mobile-nav" tabindex="-1" aria-labelledby="mobile-nav" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
 
                             <div class="modal-body">
                                 <div class="mob-header-search">
                                     <form>
-                                        <input type="text" class="form-control" placeholder="Search By ID" >
+                                        <input type="text" class="form-control" placeholder="Search By ID">
                                         <button type="submit">Search</button>
                                     </form>
                                 </div>
@@ -108,10 +107,9 @@
                 </div>
 
             </div>
-
             <nav class="navbar navbar-expand-lg" id="navbar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.webp" alt="logo" ></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.webp" alt="logo"></a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -299,54 +297,47 @@
 
                 <div class="col-xl-9 col-12">
 
-                    <div class="profile-booking profile-identity">
+                    <div class="add-client">
+
+                        <a href="profile-add-new.html">Add New</a>
+                    </div>
+
+
+                    <div class="profile-identity">
                         <div class="my-account-title">
                             <h2>My Account</h2>
                         </div>
 
                         <div class="profile-table">
-                            <table id="example1" class="table table-striped  cell-border" data-paging="true"
-                                data-searching="true" data-ordering="true" style="width:100%">
+                            <table id="example" class="table table-striped  cell-border" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
-                                        <th>Message</th>
-                                        <th>Created At</th>
-                                        <th></th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone number</th>
+                                        <th>Created at</th>
+                                        <th>Edit</th>
+                                        <th>delete</th>
 
                                     </tr>
                                 </thead>
                                 <tbody>
 
-                                    <td>1</td>
-                                    <td>there is notification</td>
-                                    <td>15:00</td>
+                                    <td>Ahmed</td>
+                                    <td>username@user.com </td>
+                                    <td>01111111111</td>
+                                    <td>07:00</td>
                                     <td>
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#points-modal">
-                                            <i class="fa-solid fa-eye"></i>
+                                        <a href="profile-my-account-edit.html" class="table-btn btn btn-primary">
+                                            <span><i class="fa-solid fa-pen"></i></span>
+                                            edit
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <button class="table-btn btn btn-danger">
+                                            <span><i class="fa-solid fa-pen"></i></span>
+                                            delete
                                         </button>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="points-modal" tabindex="-1"
-                                            aria-labelledby="points-modal" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-
-                                                    <div class="modal-body">
-                                                        Are you sure ?
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save
-                                                            changes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </td>
 
 
@@ -370,9 +361,6 @@
 
 
 
-
-
-
     <!--start footer section-->
     <footer>
         <div class="container">
@@ -381,7 +369,7 @@
 
                 <div class="col-md-4 col-12">
                     <div class="logo-img">
-                        <img src="assets/images/logo.webp" alt="logo" >
+                        <img src="assets/images/logo.webp" alt="logo">
                     </div>
                     <h4 class="footer-desc">
                         Algomhoria ... offers all services for searching and viewing apartments, villas, shops and more
@@ -438,7 +426,7 @@
                     <div class="news-letter">
                         <h4 class="footer-title text-center">News letter</h4>
                         <form>
-                            <input type="text" class="form-control" placeholder="Your Email" >
+                            <input type="text" class="form-control" placeholder="Your Email">
                             <button type="submit" class="btn">Send</button>
                         </form>
                     </div>
@@ -472,9 +460,9 @@
 
 
 
-
- <script src="assets/js/bundle.js"></script>
+    <script src="assets/js/bundle.js"></script>
     <script src="assets/js/main.js"></script>
+
 
 </body>
 

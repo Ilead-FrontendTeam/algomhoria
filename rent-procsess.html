@@ -38,8 +38,10 @@
 
 
 
-<body>
 
+
+
+<body>
 
     <!--start header section-->
     <header>
@@ -48,14 +50,14 @@
             <div class="header-details">
 
                 <a href="index.html" class="website-logo">
-                    <img src="assets/images/logo.webp" alt="logo" >
+                    <img src="assets/images/logo.webp" alt="logo">
                 </a>
 
                 <div class="header-info">
 
                     <div class="header-search">
                         <form>
-                            <input type="text" class="form-control" placeholder="Search By ID" >
+                            <input type="text" class="form-control" placeholder="Search By ID">
                             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
@@ -82,22 +84,21 @@
             <div class="mobile-header-details">
 
 
-                <button  data-bs-toggle="modal" data-bs-target="#mobile-nav">
+                <button data-bs-toggle="modal" data-bs-target="#mobile-nav">
                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </button>
                 <a href="tel:+201288818000"><span><i class="fa-solid fa-phone"></i></span></a>
                 <a href="mailto:info@algomhoria.com"><span><i class="fa-solid fa-envelope"></i></span></a>
 
                 <!-- Modal -->
-                <div class="modal fade" id="mobile-nav" tabindex="-1" aria-labelledby="mobile-nav"
-                    aria-hidden="true">
+                <div class="modal fade" id="mobile-nav" tabindex="-1" aria-labelledby="mobile-nav" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
 
                             <div class="modal-body">
                                 <div class="mob-header-search">
                                     <form>
-                                        <input type="text" class="form-control" placeholder="Search By ID" >
+                                        <input type="text" class="form-control" placeholder="Search By ID">
                                         <button type="submit">Search</button>
                                     </form>
                                 </div>
@@ -111,7 +112,7 @@
 
             <nav class="navbar navbar-expand-lg" id="navbar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.webp" alt="logo" ></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.webp" alt="logo"></a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -186,7 +187,7 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item" id="lang">
                                 <a class="nav-link" href="ar/index.html">العربية</a>
                             </li>
 
@@ -199,173 +200,112 @@
     <!--end header section-->
 
 
-    <!--start sub intro section-->
-    <section class="sub-intro single-project-intro">
+    <!--start rentig process section-->
+    <section class="renting-process">
         <div class="container">
-            <div class="sub-intro-content">
+            <h1 class="text-center">Checkout</h1>
 
-                <h1>
-                    Profile
-                </h1>
+            <div class="rent-tabs">
+                <form>
 
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">
-                            Profile
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" role="tab" href="#rabout">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
                         </li>
-                    </ol>
-                </nav>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link disabled" data-toggle="tab" role="tab" href="#rdetails">
+                                <i class="fa-solid fa-house-user"></i>
+                            </a>
+                        </li>
 
-            </div>
-        </div>
-    </section>
-    <!--end sub intro section-->
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link disabled" data-toggle="tab" role="tab" href="#rcheck">
+                                <i class="fa-solid fa-check"></i>
+                            </a>
+                        </li>
 
+                    </ul>
 
-    <!--start profile section-->
-    <section class="profile">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-12">
-                    <div class="profile-card">
-                        <div class="profile-info">
-                            <div class="profile-img">
-                                <img src="assets/images/user.webp" alt="user-img" />
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container rabout active" id="rabout">
+                            <h3 class="text-center">About You</h3>
+                            <div class="form-group">
+                                <label>payment Method</label>
+                                <select class="form-control">
+                                    <option value="0">Choose</option>
+                                    <option value="1">Cash</option>
+                                    <option value="2">Master Card / Visa</option>
+                                </select>
                             </div>
-                            <h3>User Name</h3>
-                            <p>
-                                <span><i class="fa-solid fa-envelope"></i></span>
-                                username@user.com
-                            </p>
+
+                            <div class="rent-information">
+                                <label>Basic Information</label>
+                                <input type="text" class="form-control">
+                                <input type="email" class="form-control">
+                                <input type="tel" class="form-control">
+
+                            </div>
+
+                            <div class="rent-information">
+                                <label>Billing information</label>
+                                <input type="text" class="form-control" placeholder="Country">
+                                <input type="text" class="form-control" placeholder="City">
+                                <input type="text" class="form-control" placeholder="Street">
+                                <input type="text" class="form-control" placeholder="building">
+                                <input type="text" class="form-control" placeholder="Floor">
+                                <input type="text" class="form-control" placeholder="Apartment">
+
+                            </div>
+
+                            <div class="rent-form-btn">
+                                <button class="next-step">Next</button>
+                            </div>
+
                         </div>
 
-                        <div class="user-list">
-                            <ul>
-                                <li>
-                                    <a href="profile-my-account-edit.html">
-                                        <span><i class="fa-solid fa-gear"></i></span>
-                                        My account
-                                    </a>
-                                </li>
 
-                                <li>
-                                    <a href="profile-property.html">
-                                        <span><i class="fa-solid fa-list"></i></span>
-                                        Property
-                                    </a>
-                                </li>
+                        <div class="tab-pane container fade slide2" id="rdetails">
+                            <h3 class="text-center">Details</h3>
+                            <div class="rent-details">
+                                <h5>Total</h5>
+                                <h6>311</h6>
+                            </div>
 
-                                <li>
-                                    <a href="profile-booking.html">
-                                        <span><i class="fa-regular fa-calendar"></i></span>
-                                        Booking
-                                    </a>
-                                </li>
+                            <div class="rent-form-btn">
+                                <button class="next-step">Next</button>
+                            </div>
 
-                                <li>
-                                    <a href="profile-users.html">
-                                        <span><i class="fa-regular fa-calendar"></i></span>
-                                        Users
-                                    </a>
-                                </li>
 
-                                <li>
-                                    <a href="profile-points.html">
-                                        <span><i class="fa-regular fa-calendar"></i></span>
-                                        points
-                                    </a>
-                                </li>
 
-                                <li>
-                                    <a href="profile-notification.html">
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        Notifications
-                                        <span class="notification-num">0</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <span><i class="fa-solid fa-reply"></i></span>
-                                        Logout
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
+
+
+                        <div class="tab-pane container fade slide2" id="rcheck">
+
+
+
+                        </div>
+
+
                     </div>
 
-                </div>
+                </form>
 
-                <div class="col-xl-9 col-12">
-
-                    <div class="profile-booking profile-identity">
-                        <div class="my-account-title">
-                            <h2>My Account</h2>
-                        </div>
-
-                        <div class="profile-table">
-                            <table id="example1" class="table table-striped  cell-border" data-paging="true"
-                                data-searching="true" data-ordering="true" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Message</th>
-                                        <th>Created At</th>
-                                        <th></th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <td>1</td>
-                                    <td>there is notification</td>
-                                    <td>15:00</td>
-                                    <td>
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#points-modal">
-                                            <i class="fa-solid fa-eye"></i>
-                                        </button>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="points-modal" tabindex="-1"
-                                            aria-labelledby="points-modal" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-
-                                                    <div class="modal-body">
-                                                        Are you sure ?
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save
-                                                            changes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </td>
-
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                </div>
             </div>
+
+
         </div>
+
+
+
+
+
+       
     </section>
-    <!--end profile section -->
-
-
-
-
-
-
+    <!--end renting process section-->
 
 
 
@@ -381,7 +321,7 @@
 
                 <div class="col-md-4 col-12">
                     <div class="logo-img">
-                        <img src="assets/images/logo.webp" alt="logo" >
+                        <img src="assets/images/logo.webp" alt="logo">
                     </div>
                     <h4 class="footer-desc">
                         Algomhoria ... offers all services for searching and viewing apartments, villas, shops and more
@@ -438,7 +378,7 @@
                     <div class="news-letter">
                         <h4 class="footer-title text-center">News letter</h4>
                         <form>
-                            <input type="text" class="form-control" placeholder="Your Email" >
+                            <input type="text" class="form-control" placeholder="Your Email">
                             <button type="submit" class="btn">Send</button>
                         </form>
                     </div>
@@ -473,8 +413,9 @@
 
 
 
- <script src="assets/js/bundle.js"></script>
+    <script src="assets/js/bundle.js"></script>
     <script src="assets/js/main.js"></script>
+
 
 </body>
 

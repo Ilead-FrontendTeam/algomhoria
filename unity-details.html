@@ -185,7 +185,7 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item" id="lang">
                                 <a class="nav-link" href="ar/index.html">العربية</a>
                             </li>
 
@@ -198,22 +198,21 @@
     <!--end header section-->
 
 
+
     <!--start sub intro section-->
     <section class="sub-intro single-project-intro">
         <div class="container">
             <div class="sub-intro-content">
 
                 <h1>
-                    Carnelia Ain ElSokhna
+                    Flat for rent
                 </h1>
 
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Projects</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">
-                            Bianchi Ilios
-                        </li>
+                        <li class="breadcrumb-item"><a href="#">flat for rent</a></li>
+
                     </ol>
                 </nav>
 
@@ -223,9 +222,77 @@
     <!--end sub intro section-->
 
 
+    <!--start search section-->
+    <section class="search-section property-section">
+        <div class="container">
+            <form>
+                <div class="row">
+
+
+                    <div class="col-md-3 col-12">
+                        <label class="form-label">
+                            City
+                        </label>
+                        <select class="js-example-placeholder-single js-states form-control">
+                            <option>test</option>
+                            <option>2</option>
+                            <option>4</option>
+                            <option>3</option>
+                            <option>h</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-md-3 col-12">
+                        <label class="form-label">
+                            Area
+                        </label>
+                        <select class="js-example-placeholder-single js-states form-control">
+                            <option>test</option>
+                            <option>2</option>
+                            <option>4</option>
+                            <option>3</option>
+                            <option>h</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-md-3 col-12">
+                        <label class="form-label">Date From</label>
+                        <div class="input-group date" id="datepicker3">
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-12">
+                        <label class="form-label">Date to</label>
+                        <div class="input-group date" id="datepicker4">
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <button class="btn search-sec-btn" type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+    <!--end search section-->
+
+
+
 
     <!--start single project section-->
-    <section class="single-project">
+    <section class="single-project unity-details">
         <div class="container">
             <div class="row">
 
@@ -238,113 +305,181 @@
                                 <h5>Zamalek</h5>
                             </div>
 
-                            <div class="gallary">
-                                <div class="gallary-title">
-                                    <span><i class="fa-solid fa-image"></i></span>
-                                    <h6>Photo Gallary</h6>
-                                </div>
-                                <div class="slider-for2">
-                                    <div class="item">
-                                        <img src="assets/images/blog1.webp" alt="image" draggable="false" />
+                            <div class="single-unity-details">
+                                <div class="row">
+                                    <div class="unity-detail col text-center">
+                                        <span>
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </span>
+                                        <h5>550M2</h5>
                                     </div>
-                                    <div class="item">
-                                        <img src="assets/images/blog2.webp" alt="image" draggable="false" />
+
+                                    <div class="unity-detail col text-center">
+                                        <span><i class="fa-solid fa-money-bill"></i></span>
+                                        <h5>120,000 EGP</h5>
                                     </div>
-                                    <div class="item">
-                                        <img src="assets/images/blog3.webp" alt="image" draggable="false" />
-                                    </div>
-                                    <div class="item">
-                                        <img src="assets/images/blog4.webp" alt="image" draggable="false" />
-                                    </div>
-                                    <div class="item">
-                                        <img src="assets/images/blog5.webp" alt="image" draggable="false" />
-                                    </div>
+
                                 </div>
 
-                                <div class="slider-nav2">
-                                    <div class="item">
-                                        <img src="assets/images/blog1.webp" alt="image" draggable="false" />
-                                    </div>
-                                    <div class="item">
-                                        <img src="assets/images/blog2.webp" alt="image" draggable="false" />
-                                    </div>
-                                    <div class="item">
-                                        <img src="assets/images/blog3.webp" alt="image" draggable="false" />
-                                    </div>
-                                    <div class="item">
-                                        <img src="assets/images/blog4.webp" alt="image" draggable="false" />
-                                    </div>
-                                    <div class="item">
-                                        <img src="assets/images/blog5.webp" alt="image" draggable="false" />
-                                    </div>
-                                </div>
                             </div>
-                        </div>
 
-                        <div class="single-item">
-                            <h2>Description</h2>
-                            <p>
-                                During the last period, Egypt witnessed an investment boom in real estate investment,
-                                and this is evidenced by the demand and competition from international real estate
-                                companies to build residential projects in distinctive areas such as the North Coast,
-                                Ain Sukhna and other distinctive areas in Egypt, which are located on sandy beaches with
-                                clear blue waters.
-                            </p>
-                        </div>
-
-
-                        <div class="single-item">
-                            <div class="projects-tabs">
+                            <div class="unity-tabs">
+                                <!-- Nav tabs -->
                                 <ul class="nav nav-pills">
                                     <li class="nav-item">
-                                        <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Commercial
-                                            projects</a>
+                                        <a class="nav-link active" data-bs-toggle="pill" href="#gallary-tab">
+                                            <span><i class="fa-solid fa-image"></i></span>
+                                            Images
+                                        </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="pill" href="#tab2">Administrative
-                                            Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="pill" href="#tab3">Residential Projects</a>
+                                        <a class="nav-link" data-bs-toggle="pill" href="#video-tab">
+                                            <span><i class="fa-solid fa-play"></i></span>
+                                            Videos
+                                        </a>
                                     </li>
 
                                 </ul>
 
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div class="tab-pane container active" id="tab1">
-                                        <h4>Commercial projects</h4>
-                                        <p>Unavaliable</p>
+                                    <div class="tab-pane container active" id="gallary-tab">
+                                        <div class="gallary">
+                                            <!-- <div class="gallary-title">
+                                                <span><i class="fa-solid fa-image"></i></span>
+                                                <h6>Photo Gallary</h6>
+                                            </div> -->
+                                            <div class="slider-for">
+
+                                                <div class="item">
+                                                    <img src="assets/images/blog2.webp" alt="image" draggable="false" />
+                                                </div>
+                                                <div class="item">
+                                                    <img src="assets/images/blog3.webp" alt="image" draggable="false" />
+                                                </div>
+                                                <div class="item">
+                                                    <img src="assets/images/blog4.webp" alt="image" draggable="false" />
+                                                </div>
+                                                <div class="item">
+                                                    <img src="assets/images/blog5.webp" alt="image" draggable="false" />
+                                                </div>
+                                                <div class="item">
+                                                    <img src="assets/images/blog4.webp" alt="image" draggable="false" />
+                                                </div>
+                                            </div>
+
+                                            <div class="slider-nav">
+
+                                                <div class="item">
+                                                    <img src="assets/images/blog2.webp" alt="image" draggable="false" />
+                                                </div>
+                                                <div class="item">
+                                                    <img src="assets/images/blog3.webp" alt="image" draggable="false" />
+                                                </div>
+                                                <div class="item">
+                                                    <img src="assets/images/blog4.webp" alt="image" draggable="false" />
+                                                </div>
+                                                <div class="item">
+                                                    <img src="assets/images/blog4.webp" alt="image" draggable="false" />
+                                                </div>
+                                                <div class="item">
+                                                    <img src="assets/images/blog5.webp" alt="image" draggable="false" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                     </div>
 
-                                    <div class="tab-pane container fade slide2" id="tab2">
-                                        <h4>Administrative Projects</h4>
-                                        <p>Unavaliable</p>
 
-                                    </div>
+                                    <div class="tab-pane container fade" id="video-tab">
+                                        <iframe src="https://www.youtube.com/embed/xjin1uLR59Q"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
 
-                                    <div class="tab-pane container fade slide2" id="tab3">
-                                        <h4>Residential Projects</h4>
-                                        <p>Unavaliable</p>
                                     </div>
                                 </div>
-
-
-
-
                             </div>
+
                         </div>
 
                         <div class="single-item">
-                            <h2>Location</h2>
-                            <div class="project-iframe">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5233.98506905127!2d12.098925!3d49.010727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xafce9d7fc6cb247d!2scomma!5e0!3m2!1sen!2sus!4v1663676325118!5m2!1sen!2sus"
-                                    height="650" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                </iframe>
+                            <h2>Additional details</h2>
+                            <div class="unity-Additional">
+                                <ul>
+                                    <li>
+                                        <span class="unity-det-title">
+                                            Location :
+                                        </span>
+
+                                        <span>
+                                            ,,
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="unity-det-title">
+                                            property Type :
+                                        </span>
+
+                                        <span>
+                                            Offices / Companies
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="unity-det-title">
+                                            Code :
+                                        </span>
+
+                                        <span>
+                                            24568
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="unity-det-title">
+                                            Section :
+                                        </span>
+
+                                        <span>
+                                            For rent
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="unity-det-title">
+                                            View :
+                                        </span>
+
+                                        <span>
+                                            Side Street
+                                        </span>
+                                    </li>
+
+                                </ul>
                             </div>
                         </div>
+
+
+                        <div class="single-item">
+                            <h2>Services</h2>
+                            <div class="item-ul">
+                                <ul>
+                                    <li>
+                                        <span><i class="fa-solid fa-check"></i></span>
+                                        24 hour Security
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+
 
                         <div class="single-item">
                             <h2>Facilities</h2>
@@ -390,88 +525,59 @@
                         </div>
 
                         <div class="single-item">
-                            <h2>Units</h2>
-                            <div class="item-ul">
-                                <ul>
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Parking Space
-                                    </li>
-
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Internet Access
-
-                                    </li>
-
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Air Condition
-
-                                    </li>
-
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Sattelite Connection
-
-                                    </li>
-
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Swimming Pool
-
-                                    </li>
-
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Closed Compound
-
-                                    </li>
-
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Closed Compound
-
-                                    </li>
-
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Closed Compound
-
-                                    </li>
-
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Closed Compound
-
-                                    </li>
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Closed Compound
-
-                                    </li>
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Closed Compound
-
-                                    </li>
-                                    <li>
-                                        <span><i class="fa-solid fa-check"></i></span>
-                                        Closed Compound
-
-                                    </li>
-
-
-                                </ul>
-                            </div>
+                            <h2>Description</h2>
+                            <p>
+                                During the last period, Egypt witnessed an investment boom in real estate investment,
+                                and this is evidenced by the demand and competition from international real estate
+                                companies to build residential projects in distinctive areas such as the North Coast,
+                                Ain Sukhna and other distinctive areas in Egypt, which are located on sandy beaches with
+                                clear blue waters.
+                            </p>
                         </div>
-
 
                     </div>
 
                 </div>
 
                 <div class="col-lg-4 col-12">
+
+                    <div class="unity-booking">
+                        <h4>Booking</h4>
+                        <form>
+                            <div class="booking-check">
+                                <div class="form-group">
+                                    <label>Check in</label>
+                                    <div class="input-group date" id="datepicker">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-append">
+                                        </span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label>Check out</label>
+                                    <div class="input-group date" id="datepicker5">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-append">
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="total-booking-price">
+                                <h5>Grand total</h5>
+                                <h6>18.7777,00</h6>
+                            </div>
+
+                            <a href="#" class="unity-booking-btn">Book Now</a>
+                        </form>
+
+                    </div>
+
+
                     <div class="single-project-form">
                         <h4>Send to ad owner </h4>
                         <form>
@@ -497,6 +603,8 @@
 
                             <button type="submit">Send</button>
                         </form>
+
+                        <a href="#" class="unity-booking-call">Call</a>
                     </div>
 
                     <div class="featured-projects-slider">
@@ -549,6 +657,19 @@
         </div>
     </section>
     <!--end single project section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -656,6 +777,8 @@
 
     </footer>
     <!--end footer section-->
+
+
 
 
 
