@@ -30,6 +30,23 @@ a {
 }
 
 /*start Global classes*/
+.green {
+  color: green !important;
+  background-color: transparent !important;
+  font-size: 2rem;
+}
+
+.red {
+  color: red !important;
+  background-color: transparent !important;
+  font-size: 2rem;
+}
+
+.myimg-featured {
+  border: 2px dashed #F4672F;
+  padding: 5px;
+}
+
 .section-title {
   margin-bottom: 35px;
   color: #3a464e;
@@ -333,7 +350,7 @@ iframe {
 
 .slick-prev::before,
 .slick-next::before {
-  color: #e9e0e0 !important;
+  color: #E9E0E0 !important;
   font-size: 25px;
 }
 
@@ -2079,6 +2096,7 @@ footer .rights a {
   color: #3a464e;
   margin-bottom: 5px;
   font-weight: bold;
+  font-size: 15px;
 }
 
 .add-property-sec form input {
@@ -2214,6 +2232,21 @@ footer .rights a {
   width: 125px;
   height: 45px;
   margin: 25px auto;
+}
+
+.add-property-sec .plus {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.add-property-sec .plus:hover {
+  background-color: #092531;
+  color: #fff;
+}
+
+.add-property-sec table td input {
+  margin-bottom: 0px;
 }
 
 /*end add property page*/
@@ -2691,6 +2724,123 @@ footer .rights a {
 }
 
 /*end renting process page*/
+input[type=file] {
+  padding: 10px;
+}
+
+.full-upload {
+  width: 100%;
+}
+
+.full-upload .upload-image {
+  width: 60%;
+  height: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+.full-upload .upload-image input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.full-upload .bag {
+  width: 100%;
+  margin: 50px 0px;
+}
+
+.full-upload .bag ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.full-upload .bag ul li {
+  margin: 10px;
+  position: relative;
+  height: 200px;
+}
+
+.full-upload .bag ul li div {
+  height: 100%;
+}
+
+.full-upload .bag ul li div img {
+  width: 200px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.full-upload .controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.rent-condition {
+  background-color: #ffffff;
+  width: 70%;
+  margin: 10% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3% 0px;
+}
+
+.rent-condition .rent-sucess div {
+  border-radius: 50%;
+  border: 1px solid green;
+  color: green;
+  width: 80px;
+  height: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+}
+
+.rent-condition .rent-faild {
+  border-radius: 50%;
+  border: 1px solid red;
+  color: red;
+  width: 80px;
+  height: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px;
+}
+
 /*--rent tabs--*/
 .wizard,
 .wizard .nav-tabs,
